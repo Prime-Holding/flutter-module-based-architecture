@@ -36,7 +36,7 @@ class MelostestTheme {
       error: designSystemColor.errorColor,
     );
 
-    const fontName = 'packages/shared/WorkSans';
+    const fontName = 'packages/assets/WorkSans';
 
     return baseTheme.copyWith(
       colorScheme: colorScheme,

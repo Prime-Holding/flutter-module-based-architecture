@@ -6,16 +6,12 @@ packages:
   - modules/**
 
 scripts:
-  analyze:
-    exec: dart analyze
-
   test:
     run: flutter test
     exec:
       concurrency: 5
     packageFilters:
       flutter: true
-      dirExists: test
 
   update_goldens:
     run: flutter test --update-goldens
@@ -23,7 +19,13 @@ scripts:
       concurrency: 5
     packageFilters:
       flutter: true
-      dirExists: test
+
+  flutter_clean:
+    run: flutter clean
+    exec:
+      concurrency: 5
+    packageFilters:
+      flutter: true
 
   pub_get:
     run: |

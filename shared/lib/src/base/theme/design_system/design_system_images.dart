@@ -7,22 +7,21 @@
 
 import 'package:flutter/material.dart';
 
-import '../../../../assets.dart';
-
 @immutable
 class DesignSystemImages {
   const DesignSystemImages.dark()
-      : googleLogo = 'packages/shared/${Assets.googleDarkIcon}';
+      : googleLogo = 'packages/assets/images/google_dark_icon.svg';
   const DesignSystemImages.light()
-      : googleLogo = 'packages/shared/${Assets.googleLightIcon}';
+      : googleLogo = 'packages/assets/images/google_light_icon.svg';
 
-  static const imagePath = 'assets/images';
-  final testImage =
-      const AssetImage('$imagePath/testImage.png', package: 'shared');
+  final testImage = const AssetImage(
+    'images/testImage.png',
+    package: 'shared',
+  );
 
   final String googleLogo;
 
-  final String appleLogo = 'packages/shared/${Assets.appleIcon}';
+  final String appleLogo = 'packages/assets/images/apple_icon.svg';
 
-  final String facebookLogo = 'packages/shared/${Assets.facebookIcon}';
+  final String facebookLogo = 'packages/assets/images/facebook_icon.svg';
 }
