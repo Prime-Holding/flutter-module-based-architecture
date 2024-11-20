@@ -1,3 +1,4 @@
+
 # Motivation
 ### Efficient work distribution for squad-based projects 
 - One squad owns one or multiple modules.
@@ -6,6 +7,10 @@
 - Logically-connected features are placed in one module
 - In this approach, the Data Layer, Business Models, DI and Tests are distributed across specific modules, unlike the feature-based architecture where they are grouped together.
 - Improved PR review process due to code encapsulation through modules.
+
+
+<img src="https://github.com/Prime-Holding/flutter-module-based-architecture/blob/main/documentation/module-based-architecture.png?raw=true" alt="Rx Bloc Architecture"></img>
+
 
 # Disadvantages
 ### Not-suitable for small teams (Less than 4 Flutter Engineers)
