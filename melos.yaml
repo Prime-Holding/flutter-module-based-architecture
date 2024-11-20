@@ -1,0 +1,35 @@
+name: melostest
+
+packages:
+  - app
+  - shared
+  - modules/**
+
+scripts:
+  analyze:
+    exec: dart analyze
+
+  test:
+    run: flutter test
+    exec:
+      concurrency: 5
+    packageFilters:
+      flutter: true
+      dirExists: test
+
+  update_goldens:
+    run: flutter test --update-goldens
+    exec:
+      concurrency: 5
+    packageFilters:
+      flutter: true
+      dirExists: test
+
+  pub_get:
+    run: |
+      melos exec -c 1 -- \
+        "flutter pub get"
+  build_runner:
+    run: |
+      melos exec -c 1 -- \
+        "flutter pub run build_runner build --delete-conflicting-outputs"

@@ -1,0 +1,6 @@
+# melos_managed_dependency_overrides: notifications,shared
+dependency_overrides:
+  notifications:
+    path: ../notifications
+  shared:
+    path: ../../shared

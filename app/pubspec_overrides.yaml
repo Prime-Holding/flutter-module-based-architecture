@@ -1,0 +1,12 @@
+# melos_managed_dependency_overrides: mfa,notifications,shared,showcases,user
+dependency_overrides:
+  mfa:
+    path: ../modules/mfa
+  notifications:
+    path: ../modules/notifications
+  shared:
+    path: ../shared
+  showcases:
+    path: ../modules/showcases
+  user:
+    path: ../modules/user

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/melos_melostest.iml" filepath="$PROJECT_DIR$/app/melos_melostest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/mfa/melos_mfa.iml" filepath="$PROJECT_DIR$/modules/mfa/melos_mfa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/notifications/melos_notifications.iml" filepath="$PROJECT_DIR$/modules/notifications/melos_notifications.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shared/melos_shared.iml" filepath="$PROJECT_DIR$/shared/melos_shared.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/showcases/melos_showcases.iml" filepath="$PROJECT_DIR$/modules/showcases/melos_showcases.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/user/melos_user.iml" filepath="$PROJECT_DIR$/modules/user/melos_user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/melos_melostest.iml" filepath="$PROJECT_DIR$/melos_melostest.iml" />
+    </modules>
+  </component>
+</project>
