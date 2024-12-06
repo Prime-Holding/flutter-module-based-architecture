@@ -7,7 +7,7 @@
 
 import 'package:widget_toolkit/language_picker.dart';
 
-import '../../base/data_sources/local/shared_preferences_instance.dart';
+import '../../data_sources/local/shared_preferences_instance.dart';
 import '../utils/language_util.dart';
 
 class LanguageLocalDataSource {

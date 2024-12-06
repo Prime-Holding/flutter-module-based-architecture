@@ -5,7 +5,7 @@
 // license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
 
-import '../../base/mappers/error_mappers/error_mapper.dart';
+import '../../mappers/error_mappers/error_mapper.dart';
 import '../data_source/pin_code_local_data_source.dart';
 import '../data_source/remote/pin_code_data_source.dart';
 import '../models/pin_code_create_request.dart';

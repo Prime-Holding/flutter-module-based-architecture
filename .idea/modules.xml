@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/assets/melos_assets.iml" filepath="$PROJECT_DIR$/assets/melos_assets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design_system/melos_design_system.iml" filepath="$PROJECT_DIR$/design_system/melos_design_system.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/melos_melostest.iml" filepath="$PROJECT_DIR$/app/melos_melostest.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/mfa/melos_mfa.iml" filepath="$PROJECT_DIR$/modules/mfa/melos_mfa.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/notifications/melos_notifications.iml" filepath="$PROJECT_DIR$/modules/notifications/melos_notifications.iml" />

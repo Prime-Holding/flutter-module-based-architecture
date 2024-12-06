@@ -1,8 +1,10 @@
+import 'package:design_system/design_system.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter_localizations/flutter_localizations.dart';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:golden_toolkit/golden_toolkit.dart';
-import 'package:shared/shared.dart';
+import 'package:shared/assets.dart';
+import 'package:shared/src/l10n/melostest_app_i18n.dart';
 
 import 'models/labeled_device_builder.dart';
 import 'models/scenario.dart';
@@ -97,8 +99,8 @@ Future<void> pumpDeviceBuilderWithLocalizationsAndTheme(
       ],
       localeOverrides: I18n.supportedLocales,
       theme: theme == Themes.light
-          ? MelostestTheme.buildTheme(DesignSystem.light())
-          : MelostestTheme.buildTheme(DesignSystem.dark()),
+          ? DesignSystemTheme.buildTheme(DesignSystem.light())
+          : DesignSystemTheme.buildTheme(DesignSystem.dark()),
     );
 
 /// Wraps a [DeviceBuilder] in a [materialAppWrapper] using any of the
@@ -161,8 +163,8 @@ void runGoldenBuilderTests(
     final themeName = theme.name;
     final directory = '${themeName}_theme';
     final themeData = theme == Themes.light
-        ? MelostestTheme.buildTheme(DesignSystem.light())
-        : MelostestTheme.buildTheme(DesignSystem.dark());
+        ? DesignSystemTheme.buildTheme(DesignSystem.light())
+        : DesignSystemTheme.buildTheme(DesignSystem.dark());
 
     testGoldens('$testName - $themeName', (tester) async {
       await tester.pumpWidgetBuilder(

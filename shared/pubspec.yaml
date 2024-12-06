@@ -9,8 +9,8 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  assets:
-    path: ../assets
+  design_system:
+    path: ../design_system
   flutter:
     sdk: flutter
   dio: ^5.7.0

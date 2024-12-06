@@ -1,42 +1,31 @@
 library shared;
 
-export 'src/base/extensions/async_snapshot_extensions.dart';
-export 'src/base/extensions/error_model_translations.dart';
-export 'src/base/extensions/error_model_field_translations.dart';
-export 'src/base/extensions/error_model_extensions.dart';
+export 'src/extensions/async_snapshot_extensions.dart';
+export 'src/extensions/error_model_translations.dart';
+export 'src/extensions/error_model_field_translations.dart';
+export 'src/extensions/error_model_extensions.dart';
 
-export 'src/base/data_sources/local/shared_preferences_instance.dart';
-export 'src/base/data_sources/remote/interceptors/analytics_interceptor.dart';
-export 'src/base/data_sources/remote/interceptors/log_interceptor.dart';
+export 'src/data_sources/local/shared_preferences_instance.dart';
+export 'src/data_sources/remote/interceptors/analytics_interceptor.dart';
+export 'src/data_sources/remote/interceptors/log_interceptor.dart';
 
-export 'src/base/mappers/error_mappers/error_mapper.dart';
+export 'src/mappers/error_mappers/error_mapper.dart';
 
-export 'src/base/models/errors/error_model.dart';
+export 'src/models/errors/error_model.dart';
 
-export 'src/base/blocs/coordinator_bloc.dart';
+export 'src/blocs/coordinator_bloc.dart';
 
 export 'assets.dart';
-
-export 'src/base/theme/design_system.dart';
-export 'src/base/theme/melostest_theme.dart';
 
 export 'src/l10n/l10n.dart';
 export 'src/l10n/melostest_app_i18n.dart';
 
 export 'src/keys.dart';
-export 'src/base/config/app_constants.dart';
-export 'src/base/config/environment_config.dart';
+export 'src/config/app_constants.dart';
+export 'src/config/environment_config.dart';
 
-export 'src/base/utils/helpers.dart';
-export 'src/base/utils/local_notifications.dart';
-
-export 'src/base/ui_components/app_error_modal_widget.dart';
-export 'src/base/ui_components/custom_app_bar.dart';
-export 'src/base/ui_components/app_loading_indicator.dart';
-export 'src/base/ui_components/primary_button.dart';
-export 'src/base/ui_components/action_button.dart';
-export 'src/base/ui_components/update_button.dart';
-export 'src/base/ui_components/app_error_widget.dart';
+export 'src/utils/helpers.dart';
+export 'src/utils/local_notifications.dart';
 
 export 'src/lib_change_language/extensions/language_model_extensions.dart';
 export 'src/lib_change_language/ui_components/language_picker_button.dart';
@@ -66,3 +55,5 @@ export 'src/lib_router/blocs/router_bloc.dart';
 
 export 'src/lib_translations/di/translations_dependencies.dart';
 export 'src/lib_translations/services/translations_service.dart';
+
+export 'src/ui_components/app_error_modal_widget.dart';

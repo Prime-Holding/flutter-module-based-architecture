@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bb182d3a-1811-4a86-bf74-346076693bab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/melos_flutter_test_assets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/melos_flutter_test_design_system.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/.flutter-plugins" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/.flutter-plugins-dependencies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/analysis_options.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/lib/design_system.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/pubspec_overrides.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/test/common_ui_components/view/goldens/dark_theme/app_error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/test/common_ui_components/view/goldens/light_theme/app_error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/test/common_ui_components/view/mocks/app_error_modal_widget_mock.mocks.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/test/flutter_test_config.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/test/helpers/golden_helper.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/test/helpers/models/labeled_device_builder.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_system/test/helpers/models/scenario.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/pubspec_overrides.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/flutter-module-based-architecture.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flutter-module-based-architecture.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ios/Runner/GoogleService-Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/app/ios/Runner/GoogleService-Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/base/app/melostest.dart" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/base/app/melostest.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/feature_dashboard/views/dashboard_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/feature_dashboard/views/dashboard_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/feature_home/views/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/feature_home/views/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/feature_splash/views/splash_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/feature_splash/views/splash_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/lib_dev_menu/ui_components/dev_menu_bottom_sheet.dart" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/lib_dev_menu/ui_components/dev_menu_bottom_sheet.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pubspec_overrides.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pubspec_overrides.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melos.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/melos.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/mfa/lib/src/feature_mfa/views/mfa_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mfa/lib/src/feature_mfa/views/mfa_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/mfa/lib/src/lib_mfa/methods/otp/views/mfa_otp_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mfa/lib/src/lib_mfa/methods/otp/views/mfa_otp_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/mfa/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mfa/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/mfa/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mfa/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/mfa/pubspec_overrides.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mfa/pubspec_overrides.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/notifications/lib/src/feature_notifications/views/notifications_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/notifications/lib/src/feature_notifications/views/notifications_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/notifications/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/modules/notifications/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/notifications/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/notifications/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/notifications/pubspec_overrides.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/notifications/pubspec_overrides.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/showcases/lib/src/feature_counter/views/counter_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/lib/src/feature_counter/views/counter_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/showcases/lib/src/feature_deep_link_details/views/deep_link_details_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/lib/src/feature_deep_link_details/views/deep_link_details_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/showcases/lib/src/feature_deep_link_list/ui_components/enter_message_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/lib/src/feature_deep_link_list/ui_components/enter_message_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/showcases/lib/src/feature_deep_link_list/views/deep_link_list_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/lib/src/feature_deep_link_list/views/deep_link_list_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/showcases/lib/src/feature_enter_message/views/enter_message_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/lib/src/feature_enter_message/views/enter_message_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/showcases/lib/src/feature_showcase/ui_components/showcase_feature_list_tile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/lib/src/feature_showcase/ui_components/showcase_feature_list_tile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/showcases/lib/src/feature_showcase/views/showcase_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/lib/src/feature_showcase/views/showcase_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/showcases/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/showcases/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/showcases/pubspec_overrides.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/pubspec_overrides.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/lib/src/feature_login/ui_components/login_form.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/lib/src/feature_login/ui_components/login_form.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/lib/src/feature_login/views/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/lib/src/feature_login/views/login_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/lib/src/feature_otp/views/otp_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/lib/src/feature_otp/views/otp_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/lib/src/feature_profile/ui_components/logout_action_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/lib/src/feature_profile/ui_components/logout_action_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/lib/src/feature_profile/views/profile_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/lib/src/feature_profile/views/profile_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/lib/src/lib_social_logins/ui_components/apple_login_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/lib/src/lib_social_logins/ui_components/apple_login_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/lib/src/lib_social_logins/ui_components/facebook_login_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/lib/src/lib_social_logins/ui_components/facebook_login_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/lib/src/lib_social_logins/ui_components/google_login_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/lib/src/lib_social_logins/ui_components/google_login_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/lib/src/lib_social_logins/ui_components/social_login_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/lib/src/lib_social_logins/ui_components/social_login_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/pubspec_overrides.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/pubspec_overrides.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/dependencies.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/dependencies.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/shared.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/shared.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/blocs/coordinator_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/blocs/coordinator_bloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/blocs/coordinator_bloc_extensions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/blocs/coordinator_bloc_extensions.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/config/app_constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/config/app_constants.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/config/environment_config.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/config/environment_config.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/config/firebase_web_config.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/config/firebase_web_config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/config/is_in_test_mode_io_available.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/config/is_in_test_mode_io_available.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/config/is_in_test_mode_io_not_available.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/config/is_in_test_mode_io_not_available.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/data_sources/local/shared_preferences_instance.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/data_sources/local/shared_preferences_instance.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/data_sources/remote/interceptors/analytics_interceptor.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/data_sources/remote/interceptors/analytics_interceptor.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/data_sources/remote/interceptors/log_interceptor.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/data_sources/remote/interceptors/log_interceptor.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/data_sources/remote/sse_remote_data_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/data_sources/remote/sse_remote_data_source.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/extensions/async_snapshot_extensions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/extensions/async_snapshot_extensions.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/extensions/error_model_extensions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/extensions/error_model_extensions.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/extensions/error_model_field_translations.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/extensions/error_model_field_translations.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/extensions/error_model_translations.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/extensions/error_model_translations.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/mappers/error_mappers/dio_error_mapper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/mappers/error_mappers/dio_error_mapper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/mappers/error_mappers/error_mapper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/mappers/error_mappers/error_mapper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/models/errors/access_denied_error_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/models/errors/access_denied_error_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/models/errors/connection_refused_error_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/models/errors/connection_refused_error_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/models/errors/error_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/models/errors/error_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/models/errors/error_server_generic_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/models/errors/error_server_generic_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/models/errors/field_error_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/models/errors/field_error_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/models/errors/field_required_error_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/models/errors/field_required_error_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/models/errors/network_error_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/models/errors/network_error_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/models/errors/no_connection_error_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/models/errors/no_connection_error_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/models/errors/not_found_error_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/models/errors/not_found_error_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/models/errors/server_error_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/models/errors/server_error_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/models/response_models/sse_message_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/models/response_models/sse_message_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/repositries/sse_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/repositries/sse_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/services/sse_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/services/sse_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/theme/design_system.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/lib/src/design_system.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/theme/design_system/design_system_colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/lib/src/design_system/design_system_colors.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/theme/design_system/design_system_icons.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/lib/src/design_system/design_system_icons.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/theme/design_system/design_system_images.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/lib/src/design_system/design_system_images.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/theme/design_system/design_system_spacing.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/lib/src/design_system/design_system_spacing.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/theme/design_system/design_system_typography.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/lib/src/design_system/design_system_typography.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/theme/melostest_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/lib/src/design_system_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/ui_components/action_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/lib/src/ui_components/action_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/ui_components/app_error_modal_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/ui_components/app_error_modal_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/ui_components/app_error_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/lib/src/ui_components/app_error_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/ui_components/app_loading_indicator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/lib/src/ui_components/app_loading_indicator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/ui_components/custom_app_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/lib/src/ui_components/custom_app_bar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/ui_components/popup_builder.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/lib/src/ui_components/popup_builder.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/ui_components/primary_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/lib/src/ui_components/primary_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/ui_components/update_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/lib/src/ui_components/update_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/utils/helpers.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/utils/helpers.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/utils/local_notifications.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/utils/local_notifications.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/utils/retry_when_mixin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/utils/retry_when_mixin.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/base/utils/sse_utilities.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/utils/sse_utilities.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/http_clients/api_http_client.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/http_clients/api_http_client.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/http_clients/plain_http_client.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/http_clients/plain_http_client.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_analytics/blocs/analytics_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_analytics/blocs/analytics_bloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_analytics/models/log_event_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_analytics/models/log_event_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_analytics/repositories/analytics_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_analytics/repositories/analytics_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_change_language/data_sources/language_local_data_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_change_language/data_sources/language_local_data_source.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_change_language/repositories/language_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_change_language/repositories/language_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_change_language/ui_components/language_picker_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_change_language/ui_components/language_picker_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_permissions/repositories/permissions_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_permissions/repositories/permissions_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_permissions/services/permissions_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_permissions/services/permissions_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/bloc/create_pin_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/bloc/create_pin_bloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/bloc/update_and_verify_pin_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/bloc/update_and_verify_pin_bloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/data_source/pin_biometrics_local_data_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/data_source/pin_biometrics_local_data_source.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/repository/pin_code_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/repository/pin_code_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/services/create_pin_code_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/services/create_pin_code_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/services/update_pin_code_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/services/update_pin_code_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/views/update_pin_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/views/update_pin_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/views/verify_pin_code_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/views/verify_pin_code_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_translations/repositories/translations_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_translations/repositories/translations_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/shared/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/shared/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/test/blocs/coordinator_bloc_mock.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/blocs/coordinator_bloc_mock.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/test/common_services/sse_service_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/common_services/sse_service_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/test/common_ui_components/view/app_error_widget_golden_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/test/common_ui_components/view/app_error_widget_golden_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/test/common_ui_components/view/goldens/dark_theme/app_error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/test/common_ui_components/view/goldens/light_theme/app_error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/test/common_ui_components/view/mocks/app_error_modal_widget_mock.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/test/common_ui_components/view/mocks/app_error_modal_widget_mock.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/test/helpers/golden_helper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/helpers/golden_helper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/test/lib_pin_code/blocs/update_and_verify_pin_bloc_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/lib_pin_code/blocs/update_and_verify_pin_bloc_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/test/lib_pin_code/views/create_pin_golden_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/lib_pin_code/views/create_pin_golden_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/test/lib_pin_code/views/update_pin_golden_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/lib_pin_code/views/update_pin_golden_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/test/lib_pin_code/views/verify_pin_golden_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/lib_pin_code/views/verify_pin_golden_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/test/stubs.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/stubs.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "StanevPrime"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Prime-Holding/flutter-module-based-architecture.git",
+    "accountId": "61ffe500-8948-44c1-a7d7-0c46ae8198f2"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2ppy7WLPx6uETECnCr7EbGrHygM" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Flutter Test.Flutter Test -> 'design_system'.executor": "Run",
+    "Flutter Test.Flutter Test -> 'shared'.executor": "Run",
+    "Flutter Test.tests in app_error_widget_golden_test.dart.executor": "Debug",
+    "Flutter Test.tests in create_pin_golden_test.dart.executor": "Debug",
+    "Flutter.Development.executor": "Debug",
+    "Flutter.SIT.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "Shell Script.Melos -> Bootstrap Workspace.executor": "Run",
+    "Shell Script.Melos -> Clean Workspace.executor": "Run",
+    "Shell Script.Melos Run -> 'build_runner'.executor": "Run",
+    "Shell Script.Melos Run -> 'flutter_clean'.executor": "Run",
+    "Shell Script.Melos Run -> 'pub_get'.executor": "Run",
+    "Shell Script.Melos Run -> 'test'.executor": "Run",
+    "Shell Script.Melos Run -> 'update_goldens'.executor": "Run",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "io.flutter.reload.alreadyRun": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/georgistanev/Projects/flutter-module-based-architecture/design_system/test",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/design_system/test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/design_system/lib/src" />
+      <recent name="$PROJECT_DIR$/designsystem/test" />
+      <recent name="$PROJECT_DIR$/shared/lib/src/ui_components" />
+      <recent name="$PROJECT_DIR$/shared/lib/src" />
+      <recent name="$PROJECT_DIR$/designsystem/lib/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flutter.SIT">
+    <configuration name="tests in app_error_widget_golden_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/design_system/test/common_ui_components/view/app_error_widget_golden_test.dart" />
+      <option name="useRegexp" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests in create_pin_golden_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/shared/test/lib_pin_code/views/create_pin_golden_test.dart" />
+      <option name="useRegexp" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter Test.tests in app_error_widget_golden_test.dart" />
+        <item itemvalue="Flutter Test.tests in create_pin_golden_test.dart" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb182d3a-1811-4a86-bf74-346076693bab" name="Changes" comment="" />
+      <created>1733477144691</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733477144691</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/design_system/test/flutter_test_config.dart</url>
+          <line>10</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$USER_HOME$/.pub-cache/hosted/pub.dev/golden_toolkit-0.15.0/lib/src/font_loader.dart</url>
+          <line>26</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

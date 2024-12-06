@@ -1,8 +1,8 @@
 import 'package:rx_bloc/rx_bloc.dart';
 import 'package:rxdart/rxdart.dart';
 
-import '../../base/blocs/coordinator_bloc.dart';
-import '../../base/models/errors/error_model.dart';
+import '../../blocs/coordinator_bloc.dart';
+import '../../models/errors/error_model.dart';
 import '../services/analytics_service.dart';
 
 part 'analytics_bloc.rxb.g.dart';

@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 
-import '../../base/mappers/error_mappers/error_mapper.dart';
+import '../../mappers/error_mappers/error_mapper.dart';
 
 class AnalyticsRepository {
   final ErrorMapper _errorMapper;

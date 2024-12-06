@@ -7,7 +7,7 @@
 
 import 'package:widget_toolkit/language_picker.dart';
 
-import '../../base/mappers/error_mappers/error_mapper.dart';
+import '../../mappers/error_mappers/error_mapper.dart';
 import '../data_sources/language_local_data_source.dart';
 
 class LanguageRepository {

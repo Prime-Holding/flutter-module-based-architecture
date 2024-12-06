@@ -12,6 +12,7 @@ dependencies:
   alice_dio: ^1.0.6
   collection: ^1.18.0
   dio: ^5.7.0
+  design_system: any
   equatable: ^2.0.5
   firebase_core: any
   firebase_crashlytics: any

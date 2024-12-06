@@ -1,7 +1,7 @@
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 
-import 'package:shared/src/base/blocs/coordinator_bloc.dart';
+import 'package:shared/src/blocs/coordinator_bloc.dart';
 
 import 'coordinator_bloc_mock.mocks.dart';
 

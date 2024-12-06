@@ -2,8 +2,10 @@ name: melostest
 
 packages:
   - app
-  - shared
   - modules/**
+  - shared
+  - design_system
+  - assets
 
 scripts:
   test:

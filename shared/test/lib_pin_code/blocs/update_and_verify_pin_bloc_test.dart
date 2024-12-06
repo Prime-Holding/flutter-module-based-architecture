@@ -3,7 +3,7 @@ import 'package:local_session_timeout/local_session_timeout.dart';
 
 import 'package:mockito/mockito.dart';
 import 'package:rx_bloc_test/rx_bloc_test.dart';
-import 'package:shared/src/base/blocs/coordinator_bloc.dart';
+import 'package:shared/src/blocs/coordinator_bloc.dart';
 import 'package:shared/src/lib_pin_code/bloc/update_and_verify_pin_bloc.dart';
 import 'package:shared/src/lib_pin_code/services/pin_biometrics_service.dart';
 import 'package:shared/src/lib_pin_code/services/verify_pin_code_service.dart';

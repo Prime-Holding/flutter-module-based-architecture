@@ -1,6 +1,6 @@
 import 'package:copy_with_extension/copy_with_extension.dart';
 
-import '../../base/models/errors/error_model.dart';
+import '../../models/errors/error_model.dart';
 import 'log_model_tags.dart';
 
 part 'log_event_model.g.dart';

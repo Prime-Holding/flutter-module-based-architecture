@@ -12,8 +12,8 @@ import 'package:provider/provider.dart';
 import 'package:widget_toolkit_biometrics/widget_toolkit_biometrics.dart';
 import 'package:widget_toolkit_pin/widget_toolkit_pin.dart';
 
-import '../../base/extensions/error_model_translations.dart';
-import '../../base/extensions/error_model_extensions.dart';
+import '../../extensions/error_model_translations.dart';
+import '../../extensions/error_model_extensions.dart';
 
 import '../../l10n/l10n.dart';
 import '../bloc/update_and_verify_pin_bloc.dart';

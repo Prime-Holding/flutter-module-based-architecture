@@ -11,7 +11,7 @@ import 'package:local_session_timeout/local_session_timeout.dart';
 import 'package:rx_bloc/rx_bloc.dart';
 import 'package:rxdart/rxdart.dart';
 
-import '../../base/blocs/coordinator_bloc.dart';
+import '../../blocs/coordinator_bloc.dart';
 import '../services/pin_biometrics_service.dart';
 import '../services/verify_pin_code_service.dart';
 

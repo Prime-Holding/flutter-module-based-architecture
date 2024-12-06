@@ -5,6 +5,7 @@
 // license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
 
+import 'package:design_system/design_system.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rx_bloc/flutter_rx_bloc.dart';
 import 'package:provider/provider.dart';
@@ -54,7 +55,8 @@ class DeepLinkListPage extends StatelessWidget {
                     RxResultBuilder<DeepLinkListBlocType, List<DeepLinkModel>>(
                   state: (bloc) => bloc.states.deepLinkList,
                   buildError: (ctx, error, bloc) => AppErrorWidget(
-                    error: error,
+                    errorText: (error as ErrorModel).translate(context),
+                    onTabRetryText: context.l10n.tryAgain,
                     onTabRetry: () => bloc.events.fetchDeepLinkList(),
                   ),
                   buildLoading: (ctx, bloc) => Center(

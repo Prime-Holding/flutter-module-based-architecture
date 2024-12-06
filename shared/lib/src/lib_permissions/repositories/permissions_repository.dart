@@ -5,7 +5,7 @@
 // license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
 
-import '../../base/mappers/error_mappers/error_mapper.dart';
+import '../../mappers/error_mappers/error_mapper.dart';
 import '../data_sources/remote/permissions_remote_data_source.dart';
 
 class PermissionsRepository {

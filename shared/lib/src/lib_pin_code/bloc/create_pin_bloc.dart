@@ -8,7 +8,7 @@
 import 'package:rx_bloc/rx_bloc.dart';
 import 'package:rxdart/rxdart.dart';
 
-import '../../base/blocs/coordinator_bloc.dart';
+import '../../blocs/coordinator_bloc.dart';
 import '../services/create_pin_code_service.dart';
 
 part 'create_pin_bloc.rxb.g.dart';

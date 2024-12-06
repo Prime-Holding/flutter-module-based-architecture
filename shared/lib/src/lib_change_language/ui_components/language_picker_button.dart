@@ -10,8 +10,8 @@ import 'package:provider/provider.dart';
 
 import 'package:widget_toolkit/language_picker.dart';
 import 'package:widget_toolkit/ui_components.dart';
+import 'package:design_system/design_system.dart';
 
-import '../../base/theme/design_system.dart';
 import '../bloc/change_language_bloc.dart';
 import '../extensions/language_model_extensions.dart';
 import '../services/app_language_service.dart';

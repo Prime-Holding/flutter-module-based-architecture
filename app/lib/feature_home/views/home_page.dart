@@ -6,6 +6,7 @@
 // https://opensource.org/licenses/MIT.
 
 import 'package:collection/collection.dart';
+import 'package:design_system/design_system.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rx_bloc/flutter_rx_bloc.dart';
 import 'package:shared/shared.dart';

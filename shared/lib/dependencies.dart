@@ -8,12 +8,12 @@ import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
 import 'package:widget_toolkit_biometrics/widget_toolkit_biometrics.dart';
 
-import 'src/base/config/environment_config.dart';
-import 'src/base/data_sources/local/shared_preferences_instance.dart';
-import 'src/base/data_sources/remote/sse_remote_data_source.dart';
-import 'src/base/mappers/error_mappers/error_mapper.dart';
-import 'src/base/repositries/sse_repository.dart';
-import 'src/base/services/sse_service.dart';
+import 'src/config/environment_config.dart';
+import 'src/data_sources/local/shared_preferences_instance.dart';
+import 'src/data_sources/remote/sse_remote_data_source.dart';
+import 'src/mappers/error_mappers/error_mapper.dart';
+import 'src/repositries/sse_repository.dart';
+import 'src/services/sse_service.dart';
 import 'src/http_clients/api_http_client.dart';
 import 'src/http_clients/plain_http_client.dart';
 import 'src/lib_analytics/blocs/analytics_bloc.dart';

@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:dio/io.dart';
 
-import '../base/data_sources/remote/interceptors/analytics_interceptor.dart';
-import '../base/data_sources/remote/interceptors/log_interceptor.dart';
+import '../data_sources/remote/interceptors/analytics_interceptor.dart';
+import '../data_sources/remote/interceptors/log_interceptor.dart';
 
 /// An HTTP client for use with the main backed API.
 class ApiHttpClient with DioMixin implements Dio {

@@ -5,6 +5,7 @@
 // license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
 
+import 'package:design_system/design_system.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rx_bloc/flutter_rx_bloc.dart';
 import 'package:shared/shared.dart';
@@ -43,8 +44,9 @@ class SplashPage extends StatelessWidget {
                               horizontal: context.designSystem.spacing.l,
                             ),
                             child: AppErrorWidget(
-                              error: snapshot.data!,
                               onTabRetry: () => bloc.events.initializeApp(),
+                              errorText: snapshot.data!.translate(context),
+                              onTabRetryText: context.l10n.tryAgain,
                             ),
                           ),
                         )

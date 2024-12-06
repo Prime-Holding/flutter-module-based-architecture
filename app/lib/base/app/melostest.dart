@@ -7,6 +7,7 @@
 
 import 'dart:async';
 
+import 'package:design_system/design_system.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -234,8 +235,8 @@ class __MyMaterialAppState extends State<_MyMaterialApp> {
 
   Widget _buildMaterialApp(BuildContext context) => MaterialApp.router(
         title: 'Melostest',
-        theme: MelostestTheme.buildTheme(DesignSystem.light()),
-        darkTheme: MelostestTheme.buildTheme(DesignSystem.dark()),
+        theme: DesignSystemTheme.buildTheme(DesignSystem.light()),
+        darkTheme: DesignSystemTheme.buildTheme(DesignSystem.dark()),
         localizationsDelegates: const [
           AppI18n.delegate,
           // ...GlobalMaterialLocalizations.delegates,
