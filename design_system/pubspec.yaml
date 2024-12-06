@@ -31,6 +31,12 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
   uses-material-design: true
+
+  assets:
+    - packages/assets/images/google_light_icon.svg
+    - packages/assets/images/google_dark_icon.svg
+    - packages/assets/images/facebook_icon.svg
+    - packages/assets/images/apple_icon.svg
   # To add assets to your package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

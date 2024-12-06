@@ -47,12 +47,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  assets:
-    - packages/assets/images/google_light_icon.svg
-    - packages/assets/images/google_dark_icon.svg
-    - packages/assets/images/facebook_icon.svg
-    - packages/assets/images/apple_icon.svg
-
 
   #
   # For details regarding assets in packages, see

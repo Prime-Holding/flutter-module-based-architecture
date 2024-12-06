@@ -65,7 +65,7 @@ packages:
   assets:
     dependency: "direct overridden"
     description:
-      path: "../../assets"
+      path: "../../design_system_assets"
       relative: true
     source: path
     version: "0.0.1"
