@@ -17,7 +17,7 @@
 ### IDE performance issues
 - Potential IDE performance issues caused by the Dart analyser when dealing with a large number of (20+) modules
 ### High complexity and extra development overhead compared with the feature-based structure
-- Dealing with a separate packages (shared and design_system)
+- Dealing with separate packages (shared and design_system)
 - Feature-agnostic router and route resolver
   - An extra route model class needs to be implemented in the shared package
   - Each route model must be mapped to a go_router route in the route resolver service.
