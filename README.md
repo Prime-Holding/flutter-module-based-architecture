@@ -13,13 +13,11 @@
 
 
 # Disadvantages
-### Not-suitable for small teams (Less than 4 Flutter Engineers)
+### Not-suitable for small applications (Less than 4 Flutter Engineers, less than four months)
 ### IDE performance issues
 - Potential IDE performance issues caused by the Dart analyser when dealing with a large number of (20+) modules
 ### High complexity and extra development overhead compared with the feature-based structure
-- Dealing with a separate shared package
-  - The assets need to be placed in and exported from the shared package
-    - Each module needs to specify the required assets from the shared package one by one.
+- Dealing with a separate packages (shared and design_system)
 - Feature-agnostic router and route resolver
   - An extra route model class needs to be implemented in the shared package
   - Each route model must be mapped to a go_router route in the route resolver service.
