@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="NONE" />
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb182d3a-1811-4a86-bf74-346076693bab" name="Changes" comment="Add documentation screenshots">
+    <list default="true" id="6d5f988e-1498-48b0-8cef-9a3bb9661594" name="Changes" comment="Update goldens">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/melos_run_pub_get.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.run/Run All Tests.run.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.run/Run integration tests.run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/.run/Run integration tests.run.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.run/build_runner_build.run.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.run/build_runner_watch.run.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.run/generate_goldens.run.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/native_assets/macos/native_assets.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/unit_test_assets/AssetManifest.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/unit_test_assets/AssetManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/unit_test_assets/FontManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/unit_test_assets/NOTICES.Z" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/unit_test_assets/shaders/ink_sparkle.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_system/test/common_ui_components/view/mocks/app_error_modal_widget_mock.mocks.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/test/common_ui_components/view/mocks/app_error_modal_widget_mock.mocks.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/melos.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/melos.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/showcases/test/feature_counter/views/goldens/dark_theme/error.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/test/feature_counter/views/goldens/dark_theme/error.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/showcases/test/feature_counter/views/goldens/light_theme/counter.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/test/feature_counter/views/goldens/light_theme/counter.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/showcases/test/feature_counter/views/goldens/light_theme/error.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/test/feature_counter/views/goldens/light_theme/error.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/showcases/test/feature_counter/views/goldens/light_theme/loading.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/test/feature_counter/views/goldens/light_theme/loading.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/dark_theme/login_error.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/dark_theme/login_error.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_empty.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_empty.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_error.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_error.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_filled.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_filled.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_loading.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_loading.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_success.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_success.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/test/lib_pin_code/views/goldens/dark_theme/update_pin_show_biometrics.png" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/lib_pin_code/views/goldens/dark_theme/update_pin_show_biometrics.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/test/lib_pin_code/views/goldens/dark_theme/verify_pin__show_biometrics.png" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/lib_pin_code/views/goldens/dark_theme/verify_pin__show_biometrics.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/test/lib_pin_code/views/goldens/light_theme/update_pin_show_biometrics.png" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/lib_pin_code/views/goldens/light_theme/update_pin_show_biometrics.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/test/lib_pin_code/views/goldens/light_theme/verify_pin__show_biometrics.png" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/lib_pin_code/views/goldens/light_theme/verify_pin__show_biometrics.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,135 +30,45 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Dart File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;StanevPrime&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Prime-Holding/flutter-module-based-architecture.git&quot;,
-    &quot;accountId&quot;: &quot;61ffe500-8948-44c1-a7d7-0c46ae8198f2&quot;
-  }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
-}</component>
-  <component name="ProjectId" id="2ppy7WLPx6uETECnCr7EbGrHygM" />
-  <component name="ProjectViewState">
-    <option name="autoscrollFromSource" value="true" />
-    <option name="autoscrollToSource" value="true" />
-    <option name="showLibraryContents" value="true" />
-    <option name="showVisibilityIcons" value="true" />
+}]]></component>
+  <component name="RunManager" selected="Flutter.Development">
+    <list>
+      <item itemvalue="Flutter.Development" />
+      <item itemvalue="Flutter.Production" />
+      <item itemvalue="Flutter.SIT" />
+      <item itemvalue="Flutter.UAT" />
+      <item itemvalue="Flutter Test.Flutter Test -&gt; 'assets'" />
+      <item itemvalue="Flutter Test.Flutter Test -&gt; 'design_system'" />
+      <item itemvalue="Flutter Test.Flutter Test -&gt; 'melostest'" />
+      <item itemvalue="Flutter Test.Flutter Test -&gt; 'mfa'" />
+      <item itemvalue="Flutter Test.Flutter Test -&gt; 'notifications'" />
+      <item itemvalue="Flutter Test.Flutter Test -&gt; 'shared'" />
+      <item itemvalue="Flutter Test.Flutter Test -&gt; 'showcases'" />
+      <item itemvalue="Flutter Test.Flutter Test -&gt; 'user'" />
+      <item itemvalue="Shell Script.Melos -&gt; Bootstrap Workspace" />
+      <item itemvalue="Shell Script.Melos -&gt; Clean Workspace" />
+      <item itemvalue="Shell Script.Melos Run -&gt; 'build_runner'" />
+      <item itemvalue="Shell Script.Melos Run -&gt; 'flutter_clean'" />
+      <item itemvalue="Shell Script.Melos Run -&gt; 'test'" />
+      <item itemvalue="Shell Script.Melos Run -&gt; 'update_goldens'" />
+      <item itemvalue="Shell Script.Run integration tests" />
+      <item itemvalue="Shell Script.Start Server" />
+      <item itemvalue="Shell Script.Sync Translations" />
+    </list>
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Flutter Test.Flutter Test -&gt; 'design_system'.executor&quot;: &quot;Run&quot;,
-    &quot;Flutter Test.Flutter Test -&gt; 'shared'.executor&quot;: &quot;Run&quot;,
-    &quot;Flutter Test.tests in app_error_widget_golden_test.dart.executor&quot;: &quot;Debug&quot;,
-    &quot;Flutter Test.tests in create_pin_golden_test.dart.executor&quot;: &quot;Debug&quot;,
-    &quot;Flutter.Development.executor&quot;: &quot;Debug&quot;,
-    &quot;Flutter.SIT.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;Shell Script.Melos -&gt; Bootstrap Workspace.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.Melos -&gt; Clean Workspace.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.Melos Run -&gt; 'build_runner'.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.Melos Run -&gt; 'flutter_clean'.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.Melos Run -&gt; 'pub_get'.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.Melos Run -&gt; 'test'.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.Melos Run -&gt; 'update_goldens'.executor&quot;: &quot;Run&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/georgistanev/Projects/flutter-module-based-architecture/design_system/test&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
-  }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/design_system/test" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/design_system/lib/src" />
-      <recent name="$PROJECT_DIR$/designsystem/test" />
-      <recent name="$PROJECT_DIR$/shared/lib/src/ui_components" />
-      <recent name="$PROJECT_DIR$/shared/lib/src" />
-      <recent name="$PROJECT_DIR$/designsystem/lib/src" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Shell Script.Melos Run -&gt; 'update_goldens'">
-    <configuration name="tests in app_error_widget_golden_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testFile" value="$PROJECT_DIR$/design_system/test/common_ui_components/view/app_error_widget_golden_test.dart" />
-      <option name="useRegexp" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tests in create_pin_golden_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testFile" value="$PROJECT_DIR$/shared/test/lib_pin_code/views/create_pin_golden_test.dart" />
-      <option name="useRegexp" value="false" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Flutter Test.tests in app_error_widget_golden_test.dart" />
-        <item itemvalue="Flutter Test.tests in create_pin_golden_test.dart" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="bb182d3a-1811-4a86-bf74-346076693bab" name="Changes" comment="" />
-      <created>1733477144691</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1733477144691</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Introduce the design package">
-      <option name="closed" value="true" />
-      <created>1733490911176</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1733490911176</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Introduce the design package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Introduce the design package" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/design_system/test/flutter_test_config.dart</url>
-          <line>10</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$USER_HOME$/.pub-cache/hosted/pub.dev/golden_toolkit-0.15.0/lib/src/font_loader.dart</url>
-          <line>26</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Update goldens" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update goldens" />
   </component>
 </project>
