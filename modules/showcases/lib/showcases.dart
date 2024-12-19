@@ -1,5 +1,3 @@
-library showcases;
-
 export 'src/base/models/deep_link_model.dart';
 
 export 'src/feature_showcase/views/showcase_page.dart';

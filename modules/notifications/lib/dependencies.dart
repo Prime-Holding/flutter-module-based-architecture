@@ -1,5 +1,3 @@
-library notifications_dependencies;
-
 import 'package:firebase_messaging/firebase_messaging.dart';
 
 import 'package:provider/provider.dart' show Provider, ReadContext;

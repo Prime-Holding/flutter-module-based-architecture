@@ -89,7 +89,7 @@ class DesignSystemTypography {
   late final counterText = TextStyle(
     fontWeight: FontWeight.w300,
     fontSize: 96,
-    color: _designSystemColor.gray.withOpacity(0.8),
+    color: _designSystemColor.gray.withValues(alpha: 0.8),
     letterSpacing: -1.5,
   );
 

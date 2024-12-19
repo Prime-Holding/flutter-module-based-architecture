@@ -1,5 +1,3 @@
-library shared;
-
 export 'src/extensions/async_snapshot_extensions.dart';
 export 'src/extensions/error_model_translations.dart';
 export 'src/extensions/error_model_field_translations.dart';

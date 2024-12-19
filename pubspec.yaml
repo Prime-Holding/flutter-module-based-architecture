@@ -1,7 +1,19 @@
-name: melostest
+name: melostestworkspace
+
+publish_to: none
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: ^3.6.0
+
+workspace:
+  - app
+  - design_system
+  - design_system_assets
+  - shared
+  - modules/mfa
+  - modules/notifications
+  - modules/showcases
+  - modules/user
 
 dev_dependencies:
   melos: ^6.2.0

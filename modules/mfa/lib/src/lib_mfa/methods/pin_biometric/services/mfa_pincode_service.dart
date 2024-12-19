@@ -26,11 +26,6 @@ class MfaPinCodeService extends PinCodeService {
   }
 
   @override
-  Future<bool> isPinCodeInSecureStorage() async {
-    return true;
-  }
-
-  @override
   Future<dynamic> verifyPinCode(String pinCode) => _mfaRepository.authenticate(
         transactionId: _lastMfaResponse.transactionId,
         request: MfaMethodRequest(
@@ -40,4 +35,7 @@ class MfaPinCodeService extends PinCodeService {
           ),
         ),
       );
+
+  @override
+  Future<bool> savePinCodeInSecureStorage(String pinCode) async => true;
 }
