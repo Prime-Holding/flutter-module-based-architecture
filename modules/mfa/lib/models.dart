@@ -1,5 +1,3 @@
-library mfa_models;
-
 export 'src/lib_mfa/models/mfa_response.dart';
 export 'src/lib_mfa/models/mfa_action.dart';
 export 'src/lib_mfa/models/mfa_method.dart';

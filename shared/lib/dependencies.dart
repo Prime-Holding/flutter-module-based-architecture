@@ -1,5 +1,3 @@
-library shared_dependencies;
-
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter_rx_bloc/flutter_rx_bloc.dart';

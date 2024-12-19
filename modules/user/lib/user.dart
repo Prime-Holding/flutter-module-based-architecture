@@ -1,5 +1,3 @@
-library user;
-
 export 'src/feature_login/di/login_page_with_dependencies.dart';
 
 export 'src/feature_otp/services/otp_text_field_validator.dart';

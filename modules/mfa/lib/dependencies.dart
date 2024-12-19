@@ -1,5 +1,3 @@
-library mfa_dependencies;
-
 import 'package:provider/provider.dart' show Provider, ReadContext;
 import 'package:provider/single_child_widget.dart';
 import 'package:shared/shared.dart';

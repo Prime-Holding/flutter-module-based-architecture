@@ -1,5 +1,3 @@
-library designsystem;
-
 export 'src/design_system.dart';
 export 'src/design_system_theme.dart';
 

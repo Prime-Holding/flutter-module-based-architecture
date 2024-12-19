@@ -68,10 +68,10 @@ class SplashBloc extends $SplashBloc {
     await _splashService.initializeApp();
 
     if (_redirectLocation != null) {
-      _navigationBloc.events.goToLocation(_redirectLocation!);
+      _navigationBloc.events.goToLocation(_redirectLocation);
     } else {
       if (await _authService.isAuthenticated()) {
-        if (await _pinCodeService.isPinCodeInSecureStorage()) {
+        if (await _pinCodeService.getPinCode() != null) {
           return _navigationBloc.events.go(VerifyPinCodeRoute(),
               extra: const PinCodeArguments(title: 'Enter Pin Code'));
         }

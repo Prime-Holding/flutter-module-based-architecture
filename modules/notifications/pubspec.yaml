@@ -5,14 +5,16 @@ homepage:
 publish_to: 'none'
 
 environment:
-  sdk: ^3.5.4
+  sdk: ^3.6.0
   flutter: ">=1.17.0"
+
+resolution: workspace
 
 dependencies:
   design_system: any
   dio: any
   equatable: any
-  firebase_messaging: ^15.1.5
+  firebase_messaging: ^15.1.6
   flutter:
     sdk: flutter
   flutter_rx_bloc: any
@@ -27,8 +29,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^4.0.0
-  build_runner: ^2.4.13
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.14
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

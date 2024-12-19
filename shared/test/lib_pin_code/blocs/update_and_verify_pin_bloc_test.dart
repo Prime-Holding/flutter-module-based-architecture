@@ -49,9 +49,6 @@ void main() {
     when(verifyPinCodeService.checkIsPinCreated())
         .thenAnswer((_) => Future.value(isPinCreated));
 
-    when(verifyPinCodeService.isPinCodeInSecureStorage())
-        .thenAnswer((_) => Future.value(isPinCodeInSecureStorage));
-
     if (pinCode != null) {
       if (encryptedPinCode != null) {
         when(verifyPinCodeService.encryptPinCode(pinCode))

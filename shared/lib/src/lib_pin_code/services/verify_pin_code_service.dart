@@ -29,10 +29,6 @@ class VerifyPinCodeService implements PinCodeService {
     await pinCodeRepository.writePinToStorage(firstPin, null);
   }
 
-  @override
-  Future<bool> isPinCodeInSecureStorage() async =>
-      await pinCodeRepository.readPinFromStorage(key: storedPin) != null;
-
   Future<bool> checkIsPinCreated() async =>
       await pinCodeRepository.getPinCode() != null;
 
@@ -49,4 +45,7 @@ class VerifyPinCodeService implements PinCodeService {
 
   @override
   Future<String?> getPinCode() => pinCodeRepository.getPinCode();
+
+  @override
+  Future<bool> savePinCodeInSecureStorage(String pinCode) async => true;
 }
