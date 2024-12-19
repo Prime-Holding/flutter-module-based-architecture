@@ -16,8 +16,6 @@
 
 # Disadvantages
 ### Not-suitable for small applications (Less than 4 Flutter Engineers, less than four months)
-### IDE performance issues
-- Potential IDE performance issues caused by the Dart analyser when dealing with a large number of (20+) modules
 ### High complexity and extra development overhead compared with the feature-based structure
 - Dealing with separate packages ([shared](shared), [design_system](design_system) and [assets](design_system_assets))
 - Feature-agnostic [routes](shared/lib/src/lib_router/routes) and [route resolver](app/lib/lib_router/services/route_resolver_service.dart)
