@@ -1,16 +1,17 @@
 # Motivation
-### Efficient work distribution for squad-based projects 
-- One squad owns one or multiple [modules](modules).
-- All squads own the following packages
-  - [shared](shared) package
-  - the [application](app) itself.
-  - [Design system](design_system) and [assets](design_system_assets)
 ### Code organisation and ownership
 - [Logically-connected](modules/user/lib/src) features are placed in one module, instead of being distributed [across the application](documentation/feature_based_project_structure.png).
 - In this approach, the Data Layer, Business Models, DI and Tests are distributed across [specific](modules/notifications/lib/src/base) modules, unlike the feature-based architecture where they are grouped together ([services](documentation/common_services.png), [repositories](documentation/base_repositories.png))
 - Improved PR review process due to code encapsulation through [modules](modules).
 - Possible [widgetbook](https://pub.dev/packages/widgetbook) integration
 
+### Efficient work distribution for squad-based projects 
+- One squad owns one or multiple [modules](modules).
+- All squads own the following packages
+  - [shared](shared) package
+  - the [application](app) itself.
+  - [Design system](design_system) and [assets](design_system_assets)
+    
 <img src="https://github.com/Prime-Holding/flutter-module-based-architecture/blob/main/documentation/module-based-architecture.png?raw=true" alt="Rx Bloc Architecture"></img>
 
 
