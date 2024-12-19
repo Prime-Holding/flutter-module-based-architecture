@@ -5,66 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb182d3a-1811-4a86-bf74-346076693bab" name="Changes" comment="Add documentation screenshots">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/version" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/version" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/server/utils/api_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/server/utils/api_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/feature_splash/blocs/splash_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/feature_splash/blocs/splash_bloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/pubspec.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/pubspec_overrides.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_system/.flutter-plugins" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_system/.flutter-plugins-dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_system/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_system/lib/design_system.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/lib/design_system.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_system/lib/src/design_system/design_system_typography.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/lib/src/design_system/design_system_typography.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_system/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/design_system/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_system/pubspec_overrides.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_system_assets/lib/assets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system_assets/lib/assets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_system_assets/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/design_system_assets/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_system_assets/test/assets_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/design_system_assets/test/assets_test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/mfa/lib/dependencies.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mfa/lib/dependencies.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/mfa/lib/mfa.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mfa/lib/mfa.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/mfa/lib/models.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mfa/lib/models.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/mfa/lib/src/lib_mfa/methods/pin_biometric/services/mfa_pincode_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mfa/lib/src/lib_mfa/methods/pin_biometric/services/mfa_pincode_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/mfa/pubspec.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/mfa/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mfa/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/mfa/pubspec_overrides.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/notifications/lib/dependencies.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/notifications/lib/dependencies.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/notifications/lib/notifications.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/notifications/lib/notifications.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/notifications/pubspec.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/notifications/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/notifications/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/notifications/pubspec_overrides.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/showcases/lib/dependencies.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/lib/dependencies.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/showcases/lib/showcases.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/lib/showcases.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/showcases/pubspec.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/showcases/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/showcases/pubspec_overrides.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/user/lib/dependencies.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/lib/dependencies.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/user/lib/user.dart" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/lib/user.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/user/pubspec.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/user/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/user/pubspec_overrides.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/lib/dependencies.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/dependencies.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/lib/shared.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/shared.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/services/create_pin_code_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/services/create_pin_code_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/services/verify_pin_code_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/lib/src/lib_pin_code/services/verify_pin_code_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/pubspec.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/shared/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/pubspec_overrides.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/test/lib_pin_code/blocs/create_pin_bloc_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/lib_pin_code/blocs/create_pin_bloc_test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/test/lib_pin_code/blocs/update_and_verify_pin_bloc_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/lib_pin_code/blocs/update_and_verify_pin_bloc_test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/test/lib_pin_code/services/create_pin_code_service_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/lib_pin_code/services/create_pin_code_service_test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/test/lib_pin_code/services/verify_pin_code_service_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/lib_pin_code/services/verify_pin_code_service_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melos.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/melos.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/showcases/test/feature_counter/views/goldens/dark_theme/error.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/test/feature_counter/views/goldens/dark_theme/error.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/showcases/test/feature_counter/views/goldens/light_theme/counter.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/test/feature_counter/views/goldens/light_theme/counter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/showcases/test/feature_counter/views/goldens/light_theme/error.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/test/feature_counter/views/goldens/light_theme/error.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/showcases/test/feature_counter/views/goldens/light_theme/loading.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/showcases/test/feature_counter/views/goldens/light_theme/loading.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/dark_theme/login_error.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/dark_theme/login_error.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_empty.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_empty.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_error.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_error.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_filled.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_filled.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_loading.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_loading.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_success.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/test/feature_login/view/goldens/light_theme/login_success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/test/lib_pin_code/views/goldens/dark_theme/update_pin_show_biometrics.png" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/lib_pin_code/views/goldens/dark_theme/update_pin_show_biometrics.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/test/lib_pin_code/views/goldens/dark_theme/verify_pin__show_biometrics.png" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/lib_pin_code/views/goldens/dark_theme/verify_pin__show_biometrics.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/test/lib_pin_code/views/goldens/light_theme/update_pin_show_biometrics.png" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/lib_pin_code/views/goldens/light_theme/update_pin_show_biometrics.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/test/lib_pin_code/views/goldens/light_theme/verify_pin__show_biometrics.png" beforeDir="false" afterPath="$PROJECT_DIR$/shared/test/lib_pin_code/views/goldens/light_theme/verify_pin__show_biometrics.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +39,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -107,39 +62,37 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Flutter Test.Flutter Test -> 'design_system'.executor": "Run",
-    "Flutter Test.Flutter Test -> 'shared'.executor": "Run",
-    "Flutter Test.tests in app_error_widget_golden_test.dart.executor": "Debug",
-    "Flutter Test.tests in create_pin_golden_test.dart.executor": "Debug",
-    "Flutter.Development.executor": "Debug",
-    "Flutter.SIT.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "Shell Script.Melos -> Bootstrap Workspace.executor": "Run",
-    "Shell Script.Melos -> Clean Workspace.executor": "Run",
-    "Shell Script.Melos Run -> 'build_runner'.executor": "Run",
-    "Shell Script.Melos Run -> 'flutter_clean'.executor": "Run",
-    "Shell Script.Melos Run -> 'pub_get'.executor": "Run",
-    "Shell Script.Melos Run -> 'test'.executor": "Run",
-    "Shell Script.Melos Run -> 'update_goldens'.executor": "Run",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "io.flutter.reload.alreadyRun": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/georgistanev/Projects/flutter-module-based-architecture",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater",
-    "show.migrate.to.gradle.popup": "false",
-    "structure.view.defaults.are.configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Flutter Test.Flutter Test -&gt; 'design_system'.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.Flutter Test -&gt; 'shared'.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.tests in app_error_widget_golden_test.dart.executor&quot;: &quot;Debug&quot;,
+    &quot;Flutter Test.tests in create_pin_golden_test.dart.executor&quot;: &quot;Debug&quot;,
+    &quot;Flutter.Development.executor&quot;: &quot;Debug&quot;,
+    &quot;Flutter.SIT.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;Shell Script.Melos -&gt; Bootstrap Workspace.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.Melos -&gt; Clean Workspace.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.Melos Run -&gt; 'build_runner'.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.Melos Run -&gt; 'flutter_clean'.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.Melos Run -&gt; 'pub_get'.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.Melos Run -&gt; 'test'.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.Melos Run -&gt; 'update_goldens'.executor&quot;: &quot;Run&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/georgistanev/Projects/flutter-module-based-architecture/design_system/test&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/documentation" />
       <recent name="$PROJECT_DIR$/design_system/test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -150,7 +103,7 @@
       <recent name="$PROJECT_DIR$/designsystem/lib/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter.SIT">
+  <component name="RunManager" selected="Shell Script.Melos Run -&gt; 'update_goldens'">
     <configuration name="tests in app_error_widget_golden_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
       <option name="testFile" value="$PROJECT_DIR$/design_system/test/common_ui_components/view/app_error_widget_golden_test.dart" />
       <option name="useRegexp" value="false" />
@@ -185,39 +138,12 @@
       <option name="project" value="LOCAL" />
       <updated>1733490911176</updated>
     </task>
-    <task id="LOCAL-00002" summary="Introduce the design_system_assets">
-      <option name="closed" value="true" />
-      <created>1733516702886</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1733516702886</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Update the architectural diagram">
-      <option name="closed" value="true" />
-      <created>1733516788961</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1733516788961</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Add documentation screenshots">
-      <option name="closed" value="true" />
-      <created>1733910345089</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1733910345089</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Introduce the design package" />
-    <MESSAGE value="Introduce the design_system_assets" />
-    <MESSAGE value="Update the architectural diagram" />
-    <MESSAGE value="Add documentation screenshots" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add documentation screenshots" />
+    <option name="LAST_COMMIT_MESSAGE" value="Introduce the design package" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
