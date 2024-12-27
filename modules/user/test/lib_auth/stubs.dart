@@ -1,4 +1,4 @@
-import 'package:user/src/lib_auth/models/auth_token_model.dart';
+import 'package:user/src/lib_auth/domain/models/auth_token_model.dart';
 
 class Stubs {
   static const email = 'someone@email.com';

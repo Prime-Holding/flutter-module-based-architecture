@@ -1,6 +1,6 @@
 import 'package:shared/routes.dart';
 
-import '../models/mfa_method.dart';
+import '../domain/models/mfa_method.dart';
 
 extension MfaMethodX on MfaMethod {
   /// Returns a [RouteDataModel] object based on the [MfaMethod] type.

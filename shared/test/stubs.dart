@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared/shared.dart';
-import 'package:shared/src/models/response_models/sse_message_model.dart';
+import 'package:shared/src/domain/models/response_models/sse_message_model.dart';
 
 class Stubs {
   static const addIcon = Icon(Icons.add);

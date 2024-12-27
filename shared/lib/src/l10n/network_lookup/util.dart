@@ -5,7 +5,7 @@
 // license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
 
-import '../../lib_translations/services/translations_service.dart';
+import '../../lib_translations/domain/services/translations_service.dart';
 import '../melostest_app_i18n.dart';
 
 String? getFromNetwork(

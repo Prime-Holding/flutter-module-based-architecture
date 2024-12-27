@@ -3,10 +3,10 @@ import 'package:local_session_timeout/local_session_timeout.dart';
 
 import 'package:mockito/mockito.dart';
 import 'package:rx_bloc_test/rx_bloc_test.dart';
-import 'package:shared/src/blocs/coordinator_bloc.dart';
-import 'package:shared/src/lib_pin_code/bloc/update_and_verify_pin_bloc.dart';
-import 'package:shared/src/lib_pin_code/services/pin_biometrics_service.dart';
-import 'package:shared/src/lib_pin_code/services/verify_pin_code_service.dart';
+import 'package:shared/src/ui/blocs/coordinator_bloc.dart';
+import 'package:shared/src/lib_pin_code/ui/bloc/update_and_verify_pin_bloc.dart';
+import 'package:shared/src/lib_pin_code/domain/services/pin_biometrics_service.dart';
+import 'package:shared/src/lib_pin_code/domain/services/verify_pin_code_service.dart';
 
 import '../../blocs/coordinator_bloc_mock.dart';
 import '../mock/pin_biometrics_service_mock.dart';

@@ -9,7 +9,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_rx_bloc/rx_form.dart';
 import 'error_model_translations.dart';
 
-import '../models/errors/error_model.dart';
+import '../domain/models/errors/error_model.dart';
 
 extension ErrorModelFieldL10nX<T> on Stream<T> {
   /// Translate the business error to a user friendly message

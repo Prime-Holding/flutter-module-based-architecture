@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import '../models/response_models/sse_message_model.dart';
+import '../domain/models/response_models/sse_message_model.dart';
 
 class SseTransformer extends StreamTransformerBase<String, SseMessageModel> {
   const SseTransformer();

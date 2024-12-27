@@ -2,7 +2,7 @@ import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:shared/shared.dart';
-import 'package:user/src/feature_login/blocs/login_bloc.dart';
+import 'package:user/src/feature_login/ui/blocs/login_bloc.dart';
 
 import 'login_mock.mocks.dart';
 

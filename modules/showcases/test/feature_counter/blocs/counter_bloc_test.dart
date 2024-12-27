@@ -11,10 +11,10 @@ import 'package:mockito/mockito.dart';
 import 'package:rx_bloc/rx_bloc.dart';
 import 'package:rx_bloc_test/rx_bloc_test.dart';
 import 'package:shared/shared.dart';
-import 'package:showcases/src/base/models/count.dart';
-import 'package:showcases/src/base/repositories/counter_repository.dart';
-import 'package:showcases/src/feature_counter/blocs/counter_bloc.dart';
-import 'package:showcases/src/feature_counter/services/counter_service.dart';
+import 'package:showcases/src/domain/models/count.dart';
+import 'package:showcases/src/data/repositories/counter_repository.dart';
+import 'package:showcases/src/feature_counter/ui/blocs/counter_bloc.dart';
+import 'package:showcases/src/feature_counter/domain/services/counter_service.dart';
 import '../stubs.dart';
 
 import 'counter_bloc_test.mocks.dart';

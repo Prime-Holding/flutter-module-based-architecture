@@ -1,6 +1,6 @@
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:shared/src/lib_pin_code/services/create_pin_code_service.dart';
+import 'package:shared/src/lib_pin_code/domain/services/create_pin_code_service.dart';
 
 import 'create_pin_code_service_mock.mocks.dart';
 

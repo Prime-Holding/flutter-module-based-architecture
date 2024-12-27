@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-import '../models/errors/error_model.dart';
+import '../domain/models/errors/error_model.dart';
 
 extension ExceptionToErrorObject on Object {
   ErrorModel asErrorModel() => this is ErrorModel

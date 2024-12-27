@@ -4,10 +4,10 @@ import 'package:provider/provider.dart' show Provider, ReadContext;
 import 'package:provider/single_child_widget.dart';
 import 'package:shared/shared.dart';
 
-import 'src/base/data_sources/local/notifications_local_data_source.dart';
-import 'src/base/data_sources/remote/push_notification_data_source.dart';
-import 'src/base/repositories/push_notification_repository.dart';
-import 'src/base/services/push_notifications_service.dart';
+import 'src/data/data_sources/local/notifications_local_data_source.dart';
+import 'src/data/data_sources/remote/push_notification_data_source.dart';
+import 'src/data/repositories/push_notification_repository.dart';
+import 'src/domain/services/push_notifications_service.dart';
 
 List<SingleChildWidget> get dependencies => [
       ..._dataSources,

@@ -2,10 +2,10 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:rx_bloc_test/rx_bloc_test.dart';
 import 'package:shared/shared.dart';
-import 'package:user/src/lib_auth/blocs/user_account_bloc.dart';
-import 'package:user/src/lib_auth/models/auth_token_model.dart';
-import 'package:user/src/lib_auth/services/auth_service.dart';
-import 'package:user/src/lib_auth/services/user_account_service.dart';
+import 'package:user/src/lib_auth/ui/blocs/user_account_bloc.dart';
+import 'package:user/src/lib_auth/domain/models/auth_token_model.dart';
+import 'package:user/src/lib_auth/domain/services/auth_service.dart';
+import 'package:user/src/lib_auth/domain/services/user_account_service.dart';
 
 import '../mock/auth_service_mock.dart';
 import '../mock/user_account_service_mock.dart';

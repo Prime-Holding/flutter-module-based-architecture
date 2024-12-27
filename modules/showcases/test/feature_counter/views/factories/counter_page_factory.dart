@@ -10,8 +10,8 @@ import 'package:flutter_rx_bloc/flutter_rx_bloc.dart';
 import 'package:provider/provider.dart';
 import 'package:rx_bloc/rx_bloc.dart';
 import 'package:shared/shared.dart';
-import 'package:showcases/src/feature_counter/blocs/counter_bloc.dart';
-import 'package:showcases/src/feature_counter/views/counter_page.dart';
+import 'package:showcases/src/feature_counter/ui/blocs/counter_bloc.dart';
+import 'package:showcases/src/feature_counter/ui/widgets/counter_page.dart';
 import 'package:user/user.dart';
 
 import '../../../../../../shared/test/blocs/router_bloc_mock.dart';

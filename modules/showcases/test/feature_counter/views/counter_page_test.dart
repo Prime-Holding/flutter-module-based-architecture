@@ -8,7 +8,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:rx_bloc/rx_bloc.dart';
 import 'package:shared/shared.dart';
-import 'package:showcases/src/feature_counter/blocs/counter_bloc.dart';
+import 'package:showcases/src/feature_counter/ui/blocs/counter_bloc.dart';
 import '../../../../../shared/test/helpers/golden_helper.dart';
 import '../../../../../shared/test/helpers/models/scenario.dart';
 import 'factories/counter_page_factory.dart';

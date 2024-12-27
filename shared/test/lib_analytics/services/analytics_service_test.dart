@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:shared/shared.dart';
-import 'package:shared/src/lib_analytics/services/analytics_service.dart';
+import 'package:shared/src/lib_analytics/domain//services/analytics_service.dart';
 
 import '../stubs.dart';
 import 'analytics_service_test.mocks.dart';

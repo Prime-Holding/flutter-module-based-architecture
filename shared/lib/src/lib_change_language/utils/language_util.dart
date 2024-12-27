@@ -7,7 +7,7 @@
 
 import 'package:widget_toolkit/language_picker.dart';
 
-import '../data_sources/language_local_data_source.dart';
+import '../data/data_sources/language_local_data_source.dart';
 
 class LanguageUtil {
   static String toKey(LanguageModel model) {

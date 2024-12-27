@@ -3,15 +3,15 @@ import 'package:provider/provider.dart' show Provider, ReadContext;
 import 'package:provider/single_child_widget.dart';
 import 'package:shared/shared.dart';
 
-import 'src/lib_auth/blocs/user_account_bloc.dart';
-import 'src/lib_auth/data_sources/local/auth_token_data_source.dart';
-import 'src/lib_auth/data_sources/local/auth_token_secure_data_source.dart';
-import 'src/lib_auth/data_sources/remote/auth_data_source.dart';
-import 'src/lib_auth/data_sources/remote/refresh_token_data_source.dart';
-import 'src/lib_auth/repositories/auth_repository.dart';
-import 'src/lib_auth/services/access_token_service.dart';
-import 'src/lib_auth/services/auth_service.dart';
-import 'src/lib_auth/services/user_account_service.dart';
+import 'src/lib_auth/ui/blocs/user_account_bloc.dart';
+import 'src/lib_auth/data/data_sources/local/auth_token_data_source.dart';
+import 'src/lib_auth/data/data_sources/local/auth_token_secure_data_source.dart';
+import 'src/lib_auth/data/data_sources/remote/auth_data_source.dart';
+import 'src/lib_auth/data/data_sources/remote/refresh_token_data_source.dart';
+import 'src/lib_auth/data/repositories/auth_repository.dart';
+import 'src/lib_auth/domain/services/access_token_service.dart';
+import 'src/lib_auth/domain/services/auth_service.dart';
+import 'src/lib_auth/domain/services/user_account_service.dart';
 
 List<SingleChildWidget> get dependencies => [
       ..._dataSources,

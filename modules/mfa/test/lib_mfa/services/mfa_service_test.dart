@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mfa/models.dart';
-import 'package:mfa/src/lib_mfa/repositories/mfa_repository.dart';
-import 'package:mfa/src/lib_mfa/services/mfa_service.dart';
+import 'package:mfa/src/lib_mfa/data/repositories/mfa_repository.dart';
+import 'package:mfa/src/lib_mfa/domain/services/mfa_service.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:rx_bloc/rx_bloc.dart';

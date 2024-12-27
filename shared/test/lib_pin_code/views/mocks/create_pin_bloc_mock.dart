@@ -1,7 +1,7 @@
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:rxdart/rxdart.dart';
-import 'package:shared/src/lib_pin_code/bloc/create_pin_bloc.dart';
+import 'package:shared/src/lib_pin_code/ui/bloc/create_pin_bloc.dart';
 
 import 'create_pin_bloc_mock.mocks.dart';
 

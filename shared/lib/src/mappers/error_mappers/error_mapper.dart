@@ -3,10 +3,10 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 
-import '../../blocs/coordinator_bloc.dart';
+import '../../ui/blocs/coordinator_bloc.dart';
 import '../../extensions/error_model_extensions.dart';
-import '../../lib_analytics/models/log_event_model.dart';
-import '../../models/errors/error_model.dart';
+import '../../lib_analytics/domain/models/log_event_model.dart';
+import '../../domain/models/errors/error_model.dart';
 
 part 'dio_error_mapper.dart';
 

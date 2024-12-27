@@ -3,8 +3,8 @@ import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:notifications/notifications.dart';
 import 'package:shared/shared.dart';
-import 'package:user/src/lib_auth/repositories/auth_repository.dart';
-import 'package:user/src/lib_auth/services/user_account_service.dart';
+import 'package:user/src/lib_auth/data/repositories/auth_repository.dart';
+import 'package:user/src/lib_auth/domain/services/user_account_service.dart';
 
 import '../stubs.dart';
 import 'user_account_service_test.mocks.dart';

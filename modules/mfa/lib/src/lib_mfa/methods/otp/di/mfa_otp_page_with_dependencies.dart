@@ -10,9 +10,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
 
-import '../../../models/mfa_response.dart';
-import '../services/mfa_otp_service.dart';
-import '../views/mfa_otp_page.dart';
+import '../../../domain/models/mfa_response.dart';
+import '../domain/services/mfa_otp_service.dart';
+import '../ui/widgets/mfa_otp_page.dart';
 
 class MfaOtpPageWithDependencies extends StatelessWidget {
   const MfaOtpPageWithDependencies({

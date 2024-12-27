@@ -3,9 +3,9 @@ import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:rx_bloc_test/rx_bloc_test.dart';
 import 'package:shared/shared.dart';
-import 'package:user/src/feature_login/blocs/login_bloc.dart';
-import 'package:user/src/feature_login/services/login_validator_service.dart';
-import 'package:user/src/lib_auth/services/user_account_service.dart';
+import 'package:user/src/feature_login/ui/blocs/login_bloc.dart';
+import 'package:user/src/feature_login/domain/services/login_validator_service.dart';
+import 'package:user/src/lib_auth/domain/services/user_account_service.dart';
 
 import '../../../../../shared/test/blocs/coordinator_bloc_mock.dart';
 

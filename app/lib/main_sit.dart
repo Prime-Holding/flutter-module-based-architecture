@@ -7,8 +7,8 @@
 
 import 'package:shared/shared.dart';
 
-import 'base/app/initialization/app_setup.dart';
-import 'base/app/melostest.dart';
+import 'ui/app/initialization/app_setup.dart';
+import 'ui/app/melostest.dart';
 
 /// Main entry point for the SIT environment
 void main() async => await setupAndRunApp(

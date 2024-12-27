@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rx_bloc/flutter_rx_bloc.dart';
-import 'package:shared/src/lib_pin_code/bloc/update_and_verify_pin_bloc.dart';
-import 'package:shared/src/lib_pin_code/models/pin_code_arguments.dart';
-import 'package:shared/src/lib_pin_code/services/update_pin_code_service.dart';
-import 'package:shared/src/lib_pin_code/views/update_pin_page.dart';
+import 'package:shared/src/lib_pin_code/ui/bloc/update_and_verify_pin_bloc.dart';
+import 'package:shared/src/lib_pin_code/domain/models/pin_code_arguments.dart';
+import 'package:shared/src/lib_pin_code/domain/services/update_pin_code_service.dart';
+import 'package:shared/src/lib_pin_code/ui/widgets/update_pin_page.dart';
 
-import 'package:shared/src/lib_router/blocs/router_bloc.dart';
+import 'package:shared/src/lib_router/ui/blocs/router_bloc.dart';
 import 'package:provider/provider.dart';
 import 'package:widget_toolkit_biometrics/widget_toolkit_biometrics.dart';
 import 'package:widget_toolkit_pin/widget_toolkit_pin.dart';

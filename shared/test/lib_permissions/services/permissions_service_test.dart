@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:shared/shared.dart';
-import 'package:shared/src/lib_permissions/repositories/permissions_repository.dart';
+import 'package:shared/src/lib_permissions/data/repositories/permissions_repository.dart';
 
 import '../stubs.dart';
 

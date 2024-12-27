@@ -3,9 +3,9 @@ import 'package:flutter_rx_bloc/flutter_rx_bloc.dart';
 
 import 'package:provider/provider.dart';
 import 'package:shared/shared.dart';
-import 'package:user/src/feature_login/blocs/login_bloc.dart';
-import 'package:user/src/feature_login/views/login_page.dart';
-import 'package:user/src/lib_social_logins/blocs/social_login_bloc.dart';
+import 'package:user/src/feature_login/ui/blocs/login_bloc.dart';
+import 'package:user/src/feature_login/ui/widgets/login_page.dart';
+import 'package:user/src/lib_social_logins/ui/blocs/social_login_bloc.dart';
 
 import '../mock/login_mock.dart';
 import '../mock/social_login_mock.dart';

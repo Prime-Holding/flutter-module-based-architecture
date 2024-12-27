@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:user/src/lib_auth/services/access_token_service.dart';
-import 'package:user/src/lib_auth/services/auth_service.dart';
+import 'package:user/src/lib_auth/domain/services/access_token_service.dart';
+import 'package:user/src/lib_auth/domain/services/auth_service.dart';
 
 import '../mock/auth_service_mock.mocks.dart';
 import '../stubs.dart';
