@@ -5,8 +5,8 @@ homepage:
 publish_to: 'none'
 
 environment:
-  sdk: ^3.6.0
-  flutter: ">=1.17.0"
+  sdk: ^3.9.0
+  flutter: ">=3.35.0"
 
 resolution: workspace
 
@@ -14,7 +14,7 @@ dependencies:
   design_system: any
   dio: any
   equatable: any
-  firebase_messaging: ^15.1.6
+  firebase_messaging: ^16.0.3
   flutter:
     sdk: flutter
   flutter_rx_bloc: any

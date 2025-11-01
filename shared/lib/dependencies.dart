@@ -2,7 +2,6 @@ import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter_rx_bloc/flutter_rx_bloc.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
 import 'package:widget_toolkit_biometrics/widget_toolkit_biometrics.dart';
@@ -10,7 +9,6 @@ import 'package:widget_toolkit_biometrics/widget_toolkit_biometrics.dart';
 import 'src/config/environment_config.dart';
 import 'src/data/data_sources/local/shared_preferences_instance.dart';
 import 'src/data/data_sources/remote/sse_remote_data_source.dart';
-import 'src/lib_router/domain/services/router_resolver_service.dart';
 import 'src/mappers/error_mappers/error_mapper.dart';
 import 'src/data/repositries/sse_repository.dart';
 import 'src/domain/services/sse_service.dart';
@@ -44,219 +42,161 @@ import 'src/lib_translations/data/repositories/translations_repository.dart';
 import 'src/lib_translations/domain/services/translations_service.dart';
 
 List<SingleChildWidget> dependencies(EnvironmentConfig config) => [
-      ..._mapper,
-      ..._httpClients(config),
-      ..._firebase,
-      ..._dataSources(config),
-      ..._repositories(config),
-      ..._services,
-      ..._blocs,
-    ];
+  ..._mapper,
+  ..._httpClients(config),
+  ..._firebase,
+  ..._dataSources(config),
+  ..._repositories(config),
+  ..._services,
+  ..._blocs,
+];
 
 List<SingleChildWidget> get _blocs => [
-      RxBlocProvider<RouterBlocType>(
-        create: (context) => RouterBloc(
-          router: context.read(),
-          permissionsService: context.read(),
-          resolverService: context.read(),
-        ),
-      ),
-      RxBlocProvider<UpdateAndVerifyPinBlocType>(
-        create: (context) => UpdateAndVerifyPinBloc(
-          coordinatorBloc: context.read(),
-          service: context.read(),
-          pinBiometricsService: context.read(),
-        ),
-      ),
-      RxBlocProvider<CreatePinBlocType>(
-        create: (context) => CreatePinBloc(
-          coordinatorBloc: context.read(),
-          service: context.read(),
-        ),
-      ),
-      RxBlocProvider<ChangeLanguageBlocType>(
-        create: (context) => ChangeLanguageBloc(
-          languageService: context.read(),
-        ),
-      ),
-      RxBlocProvider<AnalyticsBlocType>(
-        create: (context) => AnalyticsBloc(
-          context.read(),
-          context.read(),
-        ),
-      ),
-    ];
+  RxBlocProvider<RouterBlocType>(
+    create: (context) => RouterBloc(
+      router: context.read(),
+      permissionsService: context.read(),
+      resolverService: context.read(),
+    ),
+  ),
+  RxBlocProvider<UpdateAndVerifyPinBlocType>(
+    create: (context) => UpdateAndVerifyPinBloc(
+      coordinatorBloc: context.read(),
+      service: context.read(),
+      pinBiometricsService: context.read(),
+    ),
+  ),
+  RxBlocProvider<CreatePinBlocType>(
+    create: (context) =>
+        CreatePinBloc(coordinatorBloc: context.read(), service: context.read()),
+  ),
+  RxBlocProvider<ChangeLanguageBlocType>(
+    create: (context) => ChangeLanguageBloc(languageService: context.read()),
+  ),
+  RxBlocProvider<AnalyticsBlocType>(
+    create: (context) => AnalyticsBloc(context.read(), context.read()),
+  ),
+];
 
 List<SingleChildWidget> get _mapper => [
-      Provider<ErrorMapper>(
-        create: (context) => ErrorMapper(context.read()),
-      ),
-    ];
+  Provider<ErrorMapper>(create: (context) => ErrorMapper(context.read())),
+];
 
 List<Provider> _httpClients(EnvironmentConfig config) => [
-      Provider<PlainHttpClient>(
-        create: (context) => PlainHttpClient(),
-      ),
-      Provider<ApiHttpClient>(
-        create: (context) {
-          final client = ApiHttpClient()..options.baseUrl = config.baseUrl;
-          return client;
-        },
-      ),
-    ];
+  Provider<PlainHttpClient>(create: (context) => PlainHttpClient()),
+  Provider<ApiHttpClient>(
+    create: (context) {
+      final client = ApiHttpClient()..options.baseUrl = config.baseUrl;
+      return client;
+    },
+  ),
+];
 List<Provider> get _firebase => [
-      Provider<FirebaseAnalyticsObserver>(
-        create: (context) => FirebaseAnalyticsObserver(
-          analytics: FirebaseAnalytics.instance,
-        ),
-      ),
-      Provider<AnalyticsRepository>(
-        create: (context) => AnalyticsRepository(
-          context.read(),
-          FirebaseCrashlytics.instance,
-          FirebaseAnalytics.instance,
-        ),
-      ),
-      Provider<AnalyticsService>(
-        create: (context) => AnalyticsService(
-          context.read(),
-        ),
-      ),
-    ];
+  Provider<FirebaseAnalyticsObserver>(
+    create: (context) =>
+        FirebaseAnalyticsObserver(analytics: FirebaseAnalytics.instance),
+  ),
+  Provider<AnalyticsRepository>(
+    create: (context) => AnalyticsRepository(
+      context.read(),
+      FirebaseCrashlytics.instance,
+      FirebaseAnalytics.instance,
+    ),
+  ),
+  Provider<AnalyticsService>(
+    create: (context) => AnalyticsService(context.read()),
+  ),
+];
 
 List<SingleChildWidget> _dataSources(EnvironmentConfig config) => [
-      Provider<FlutterSecureStorage>(
-        create: (context) => const FlutterSecureStorage(),
-      ),
-      Provider<SharedPreferencesInstance>(
-        create: (context) => SharedPreferencesInstance(),
-      ),
-      Provider<SseRemoteDataSource>(
-        create: (context) => SseRemoteDataSource(
-          context.read<ApiHttpClient>(),
-          config.baseUrl,
-        ),
-      ),
-      Provider<SharedPreferencesInstance>(
-        create: (context) => SharedPreferencesInstance(),
-      ),
-      Provider<PinCodeLocalDataSource>(
-        create: (context) => PinCodeLocalDataSource(
-          context.read(),
-        ),
-      ),
-      Provider<PinCodeDataSource>(
-        create: (context) => PinCodeDataSource(
-          context.read<ApiHttpClient>(),
-          baseUrl: config.baseUrl,
-        ),
-      ),
-      Provider<BiometricsLocalDataSource>(
-        create: (context) => PinBiometricsLocalDataSource(context.read()),
-      ),
-      Provider<LanguageLocalDataSource>(
-        create: (context) => LanguageLocalDataSource(context.read()),
-      ),
-      Provider<PermissionsRemoteDataSource>(
-        create: (context) => PermissionsRemoteDataSource(
-          context.read<ApiHttpClient>(),
-        ),
-      ),
-      Provider<TranslationsDataSource>(
-        create: (context) => TranslationsRemoteDataSource(
-          context.read<ApiHttpClient>(),
-        ),
-      ),
-      //
-    ];
+  Provider<FlutterSecureStorage>(
+    create: (context) => const FlutterSecureStorage(),
+  ),
+  Provider<SharedPreferencesInstance>(
+    create: (context) => SharedPreferencesInstance(),
+  ),
+  Provider<SseRemoteDataSource>(
+    create: (context) =>
+        SseRemoteDataSource(context.read<ApiHttpClient>(), config.baseUrl),
+  ),
+  Provider<SharedPreferencesInstance>(
+    create: (context) => SharedPreferencesInstance(),
+  ),
+  Provider<PinCodeLocalDataSource>(
+    create: (context) => PinCodeLocalDataSource(context.read()),
+  ),
+  Provider<PinCodeDataSource>(
+    create: (context) => PinCodeDataSource(
+      context.read<ApiHttpClient>(),
+      baseUrl: config.baseUrl,
+    ),
+  ),
+  Provider<BiometricsLocalDataSource>(
+    create: (context) => PinBiometricsLocalDataSource(context.read()),
+  ),
+  Provider<LanguageLocalDataSource>(
+    create: (context) => LanguageLocalDataSource(context.read()),
+  ),
+  Provider<PermissionsRemoteDataSource>(
+    create: (context) =>
+        PermissionsRemoteDataSource(context.read<ApiHttpClient>()),
+  ),
+  Provider<TranslationsDataSource>(
+    create: (context) =>
+        TranslationsRemoteDataSource(context.read<ApiHttpClient>()),
+  ),
+  //
+];
 
 List<SingleChildWidget> _repositories(EnvironmentConfig config) => [
-      Provider<SseRepository>(
-        create: (context) => SseRepository(
-          context.read(),
-          context.read(),
-        ),
-      ),
-      Provider<PinCodeRepository>(
-        create: (context) => PinCodeRepository(
-          context.read(),
-          context.read(),
-          context.read(),
-        ),
-      ),
-      Provider<PinBiometricsRepository>(
-        create: (context) => PinBiometricsRepository(
-          context.read(),
-        ),
-      ),
-      Provider<LanguageRepository>(
-        create: (context) => LanguageRepository(
-          context.read(),
-          context.read(),
-        ),
-      ),
-      Provider<PermissionsRepository>(
-        create: (context) => PermissionsRepository(
-          context.read(),
-          context.read(),
-        ),
-      ),
-      Provider<TranslationsRepository>(
-        create: (context) => TranslationsRepository(
-          context.read(),
-          context.read(),
-        ),
-      ),
-//
-      //
-    ];
+  Provider<SseRepository>(
+    create: (context) => SseRepository(context.read(), context.read()),
+  ),
+  Provider<PinCodeRepository>(
+    create: (context) =>
+        PinCodeRepository(context.read(), context.read(), context.read()),
+  ),
+  Provider<PinBiometricsRepository>(
+    create: (context) => PinBiometricsRepository(context.read()),
+  ),
+  Provider<LanguageRepository>(
+    create: (context) => LanguageRepository(context.read(), context.read()),
+  ),
+  Provider<PermissionsRepository>(
+    create: (context) => PermissionsRepository(context.read(), context.read()),
+  ),
+  Provider<TranslationsRepository>(
+    create: (context) => TranslationsRepository(context.read(), context.read()),
+  ),
+  //
+  //
+];
 
 List<SingleChildWidget> get _services => [
-      Provider<SseService>(
-        create: (context) => SseService(
-          context.read(),
-        ),
-      ),
-      Provider<VerifyPinCodeService>(
-        create: (context) => VerifyPinCodeService(
-          context.read(),
-        ),
-      ),
-      Provider<PinBiometricsService>(
-        create: (context) => PinBiometricsService(
-          context.read(),
-        ),
-      ),
-      Provider<PinBiometricsService>(
-        create: (context) => PinBiometricsService(
-          context.read(),
-        ),
-      ),
-      Provider<AppLanguageService>(
-        create: (context) => AppLanguageService(
-          languageRepository: context.read(),
-        ),
-      ),
-      Provider<CreatePinCodeService>(
-        create: (context) => CreatePinCodeService(
-          context.read(),
-        ),
-      ),
-      Provider<PermissionsService>(
-        create: (context) => PermissionsService(
-          context.read(),
-        ),
-      ),
-      Provider<TranslationsService>(
-        create: (context) => TranslationsService(
-          context.read(),
-        ),
-      ),
-      Provider<RouterService>(
-        create: (context) => RouterService(
-          context.read(),
-          context.read(),
-          context.read(),
-        ),
-      ),
-    ];
+  Provider<SseService>(create: (context) => SseService(context.read())),
+  Provider<VerifyPinCodeService>(
+    create: (context) => VerifyPinCodeService(context.read()),
+  ),
+  Provider<PinBiometricsService>(
+    create: (context) => PinBiometricsService(context.read()),
+  ),
+  Provider<PinBiometricsService>(
+    create: (context) => PinBiometricsService(context.read()),
+  ),
+  Provider<AppLanguageService>(
+    create: (context) => AppLanguageService(languageRepository: context.read()),
+  ),
+  Provider<CreatePinCodeService>(
+    create: (context) => CreatePinCodeService(context.read()),
+  ),
+  Provider<PermissionsService>(
+    create: (context) => PermissionsService(context.read()),
+  ),
+  Provider<TranslationsService>(
+    create: (context) => TranslationsService(context.read()),
+  ),
+  Provider<RouterService>(
+    create: (context) =>
+        RouterService(context.read(), context.read(), context.read()),
+  ),
+];

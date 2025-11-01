@@ -1,7 +1,6 @@
 import 'package:rxdart/rxdart.dart';
 
 import '../../../../shared.dart';
-import '../../domain/models/errors/error_model.dart';
 import '../data_sources/remote/sse_remote_data_source.dart';
 
 import '../../domain/models/response_models/sse_message_model.dart';
@@ -18,10 +17,9 @@ class SseRepository {
 
     return Rx.retryWhen(
       () => _errorMapper.executeStream(
-        _dataSource
-            .getEventStream()
-            .doOnData(state.resetAttempts)
-            .concatWith([Stream.error(NetworkErrorModel())]),
+        _dataSource.getEventStream().doOnData(state.resetAttempts).concatWith([
+          Stream.error(NetworkErrorModel()),
+        ]),
       ),
       state.retry,
     );

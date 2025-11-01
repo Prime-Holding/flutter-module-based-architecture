@@ -10,9 +10,7 @@ import 'package:rxdart/rxdart.dart';
 import 'package:shared/shared.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../lib_permissions/domain/services/permissions_service.dart';
 import '../../routes.dart';
-import '../../../domain/models/errors/error_model.dart';
 
 part 'router_bloc.rxb.g.dart';
 
@@ -68,9 +66,9 @@ class RouterBloc extends $RouterBloc {
     required GoRouter router,
     required PermissionsService permissionsService,
     required RouterResolverService resolverService,
-  })  : _router = router,
-        _resolverService = resolverService,
-        _permissionsService = permissionsService {
+  }) : _router = router,
+       _resolverService = resolverService,
+       _permissionsService = permissionsService {
     errors.connect().addTo(_compositeSubscription);
     navigationPath.connect().addTo(_compositeSubscription);
   }
@@ -82,26 +80,28 @@ class RouterBloc extends $RouterBloc {
   @override
   ConnectableStream<ErrorModel> _mapToErrorsState() => errorState
       // TODO: Remove workaround when GoRouter gets updated for Flutter 3.24
-      .where((exc) =>
-          exc.toString() !=
-          "Exception: type 'ResultSuccess<MfaResponse>' is not a subtype of type 'Function?' of 'result'")
+      .where(
+        (exc) =>
+            exc.toString() !=
+            "Exception: type 'ResultSuccess<MfaResponse>' is not a subtype of type 'Function?' of 'result'",
+      )
       .mapToErrorModel()
       .publish();
 
   @override
   ConnectableStream<void> _mapToNavigationPathState() => Rx.merge([
-        _$goEvent
-            .throttleTime(const Duration(seconds: 1))
-            .switchMap((routeData) => _go(routeData).asResultStream()),
-        _$pushEvent
-            .throttleTime(const Duration(seconds: 1))
-            .switchMap((routeData) => _push(routeData).asResultStream()),
-        _$goToLocationEvent.doOnData(_router.go).asResultStream(),
-        _$pushReplaceEvent
-            .throttleTime(const Duration(seconds: 1))
-            .switchMap((routeData) => _pushReplace(routeData).asResultStream()),
-        _$popEvent.doOnData(_pop).asResultStream(),
-      ]).setErrorStateHandler(this).whereSuccess().publish();
+    _$goEvent
+        .throttleTime(const Duration(seconds: 1))
+        .switchMap((routeData) => _go(routeData).asResultStream()),
+    _$pushEvent
+        .throttleTime(const Duration(seconds: 1))
+        .switchMap((routeData) => _push(routeData).asResultStream()),
+    _$goToLocationEvent.doOnData(_router.go).asResultStream(),
+    _$pushReplaceEvent
+        .throttleTime(const Duration(seconds: 1))
+        .switchMap((routeData) => _pushReplace(routeData).asResultStream()),
+    _$popEvent.doOnData(_pop).asResultStream(),
+  ]).setErrorStateHandler(this).whereSuccess().publish();
 
   Future<void> _go(_GoEventArgs routeData) async {
     final route = _resolverService.resolveRoute(routeData.route);

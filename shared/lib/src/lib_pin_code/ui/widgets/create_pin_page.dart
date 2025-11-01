@@ -14,8 +14,6 @@ import 'package:widget_toolkit_pin/widget_toolkit_pin.dart';
 
 import '../../../../routes.dart';
 import '../../../../shared.dart';
-import '../../../lib_router/ui/blocs/router_bloc.dart';
-import '../../domain/models/pin_code_arguments.dart';
 
 class CreatePinPage extends StatefulWidget {
   const CreatePinPage({
@@ -40,45 +38,45 @@ class _CreatePinPageState extends State<CreatePinPage> {
 
   @override
   Widget build(BuildContext context) => Builder(
-        builder: (context) => Scaffold(
-          appBar: AppBar(
-            title: Text(
-              widget.pinCodeArguments.title.isEmpty
-                  ? context.l10n.libPinCode.createPinPage
-                  : widget.pinCodeArguments.title,
-            ),
-            forceMaterialTransparency: true,
-          ),
-          extendBodyBehindAppBar: true,
-          body: SizedBox(
-            height: MediaQuery.sizeOf(context).height,
-            child: Column(
-              children: [
-                Expanded(
-                  child: PinCodeKeyboard(
-                    mapBiometricMessageToString: (message) =>
-                        _exampleMapMessageToString(message, context),
-                    biometricsAuthDataSource:
-                        context.read<PinBiometricsAuthDataSource?>(),
-                    pinCodeService: context.read<CreatePinCodeService>(),
-                    translateError: (error) =>
-                        error.asErrorModel().translate(context),
-                    onAuthenticated: (_) => _isPinCodeVerified(context),
-                  ),
-                ),
-                RxBlocListener<CreatePinBlocType, bool>(
-                  state: (bloc) => bloc.states.isPinCreated,
-                  listener: (context, isCreated) {
-                    if (isCreated) {
-                      context.read<RouterBlocType>().events.go(ProfileRoute());
-                    }
-                  },
-                ),
-              ],
-            ),
-          ),
+    builder: (context) => Scaffold(
+      appBar: AppBar(
+        title: Text(
+          widget.pinCodeArguments.title.isEmpty
+              ? context.l10n.libPinCode.createPinPage
+              : widget.pinCodeArguments.title,
         ),
-      );
+        forceMaterialTransparency: true,
+      ),
+      extendBodyBehindAppBar: true,
+      body: SizedBox(
+        height: MediaQuery.sizeOf(context).height,
+        child: Column(
+          children: [
+            Expanded(
+              child: PinCodeKeyboard(
+                mapBiometricMessageToString: (message) =>
+                    _exampleMapMessageToString(message, context),
+                biometricsAuthDataSource: context
+                    .read<PinBiometricsAuthDataSource?>(),
+                pinCodeService: context.read<CreatePinCodeService>(),
+                translateError: (error) =>
+                    error.asErrorModel().translate(context),
+                onAuthenticated: (_) => _isPinCodeVerified(context),
+              ),
+            ),
+            RxBlocListener<CreatePinBlocType, bool>(
+              state: (bloc) => bloc.states.isPinCreated,
+              listener: (context, isCreated) {
+                if (isCreated) {
+                  context.read<RouterBlocType>().events.go(ProfileRoute());
+                }
+              },
+            ),
+          ],
+        ),
+      ),
+    ),
+  );
 
   Future<void> _isPinCodeVerified(BuildContext context) async {
     if (widget.pinCodeArguments.title == context.l10n.libPinCode.createPin) {
@@ -98,7 +96,9 @@ class _CreatePinPageState extends State<CreatePinPage> {
   }
 
   String _exampleMapMessageToString(
-      BiometricsMessage message, BuildContext context) {
+    BiometricsMessage message,
+    BuildContext context,
+  ) {
     switch (message) {
       case BiometricsMessage.notSetup:
         return context.l10n.libPinCode.biometricsNotSetup;

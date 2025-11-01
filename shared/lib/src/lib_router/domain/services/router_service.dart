@@ -1,15 +1,10 @@
 import 'package:go_router/go_router.dart';
 import 'package:shared/shared.dart';
 
-import '../../../lib_permissions/domain/services/permissions_service.dart';
 import '../../routes.dart';
 
 class RouterService {
-  RouterService(
-    this._router,
-    this._permissionsService,
-    this._resolverService,
-  );
+  RouterService(this._router, this._permissionsService, this._resolverService);
 
   final GoRouter _router;
   final PermissionsService _permissionsService;
@@ -24,10 +19,7 @@ class RouterService {
 
   Future<void> goToLocation(String route) async => _router.go(route);
 
-  Future<T?> push<T extends Object?>(
-    AppRoute route, {
-    Object? extra,
-  }) async {
+  Future<T?> push<T extends Object?>(AppRoute route, {Object? extra}) async {
     final routeModel = _resolverService.resolveRoute(route);
 
     await _permissionsService.checkPermission(routeModel.permissionName);

@@ -29,6 +29,11 @@ scripts:
     packageFilters:
       flutter: true
 
+  build_clean:
+    run: |
+      melos exec -c 1 -- \
+        "dart run build_runner clean"
+
   build_runner:
     run: |
       melos exec -c 1 -- \

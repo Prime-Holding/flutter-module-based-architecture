@@ -11,11 +11,10 @@ import '../../domain/models/cancelled_error_model.dart';
 
 class GoogleCredentialDataSource {
   Future<GoogleSignInAccount> getUsersGoogleCredential() async {
-    final googleUser = await GoogleSignIn().signIn();
-
-    if (googleUser == null) {
+    try {
+      return await GoogleSignIn.instance.authenticate();
+    } catch (e) {
       throw CancelledErrorModel();
     }
-    return googleUser;
   }
 }

@@ -50,9 +50,7 @@ class SocialLoginBloc extends $SocialLoginBloc {
   @override
   ConnectableStream<bool> _mapToLoggedInState() => _$loginEvent
       .throttleTime(const Duration(seconds: 1))
-      .switchMap(
-        (_) => _login().asResultStream(),
-      )
+      .switchMap((_) => _login().asResultStream())
       .setResultStateHandler(this)
       .whereSuccess()
       .emitAuthenticatedToCoordinator(_coordinatorBloc)

@@ -6,8 +6,11 @@ import 'package:user/src/lib_social_logins/ui/blocs/social_login_bloc.dart';
 
 import 'social_login_mock.mocks.dart';
 
-@GenerateMocks(
-    [SocialLoginBlocStates, SocialLoginBlocEvents, SocialLoginBlocType])
+@GenerateMocks([
+  SocialLoginBlocStates,
+  SocialLoginBlocEvents,
+  SocialLoginBlocType,
+])
 SocialLoginBlocType socialLoginMockFactory({
   bool? loggedIn,
   bool? isLoading,
@@ -20,11 +23,10 @@ SocialLoginBlocType socialLoginMockFactory({
   when(blocMock.events).thenReturn(eventsMock);
   when(blocMock.states).thenReturn(statesMock);
 
-  final loggedInState = (loggedIn != null
-          ? Stream.value(loggedIn)
-          : const Stream<bool>.empty())
-      .publishReplay(maxSize: 1)
-    ..connect();
+  final loggedInState =
+      (loggedIn != null ? Stream.value(loggedIn) : const Stream<bool>.empty())
+          .publishReplay(maxSize: 1)
+        ..connect();
 
   final isLoadingState = isLoading != null
       ? Stream.value(isLoading).shareReplay(maxSize: 1)

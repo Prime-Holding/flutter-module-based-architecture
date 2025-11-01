@@ -18,28 +18,27 @@ Widget loginFactory({
   bool? showErrors,
   bool? isLoading,
   ErrorModel? errors,
-}) =>
-    Scaffold(
-      body: MultiProvider(
-        providers: [
-          RxBlocProvider<LoginBlocType>.value(
-            value: loginMockFactory(
-              email: email,
-              password: password,
-              loggedIn: loggedIn,
-              showErrors: showErrors,
-              isLoading: isLoading,
-              errors: errors,
-            ),
-          ),
-          RxBlocProvider<SocialLoginBlocType>.value(
-            value: socialLoginMockFactory(
-              loggedIn: loggedIn,
-              isLoading: isLoading,
-              errors: errors,
-            ),
-          ),
-        ],
-        child: const LoginPage(),
+}) => Scaffold(
+  body: MultiProvider(
+    providers: [
+      RxBlocProvider<LoginBlocType>.value(
+        value: loginMockFactory(
+          email: email,
+          password: password,
+          loggedIn: loggedIn,
+          showErrors: showErrors,
+          isLoading: isLoading,
+          errors: errors,
+        ),
       ),
-    );
+      RxBlocProvider<SocialLoginBlocType>.value(
+        value: socialLoginMockFactory(
+          loggedIn: loggedIn,
+          isLoading: isLoading,
+          errors: errors,
+        ),
+      ),
+    ],
+    child: const LoginPage(),
+  ),
+);

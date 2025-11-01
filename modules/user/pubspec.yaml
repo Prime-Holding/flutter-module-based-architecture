@@ -5,8 +5,8 @@ homepage:
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 environment:
-  sdk: ^3.6.0
-  flutter: ">=1.17.0"
+  sdk: ^3.9.0
+  flutter: ">=3.35.0"
 
 resolution: workspace
 
@@ -17,9 +17,9 @@ dependencies:
   shared: any
   notifications: any
   jwt_decoder: any
-  sign_in_with_apple: ^6.1.4
-  flutter_facebook_auth: ^7.1.1
-  google_sign_in: ^6.2.2
+  sign_in_with_apple: ^7.0.1
+  flutter_facebook_auth: ^7.1.2
+  google_sign_in: ^7.2.0
   provider: any
   flutter_rx_bloc: any
   flutter_svg: any
@@ -31,7 +31,7 @@ dependencies:
   rxdart: any
   flutter_secure_storage: any
   widget_toolkit: any
-  widget_toolkit_otp: ^0.1.0
+  widget_toolkit_otp: ^0.1.1
 
 dev_dependencies:
   flutter_test:
@@ -41,6 +41,9 @@ dev_dependencies:
   rx_bloc_test: ^5.0.0
   build_runner: ^2.4.14
   golden_toolkit: ^0.15.0
+  rx_bloc_generator: ^8.0.1
+  json_serializable: ^6.9.5
+  retrofit_generator: ^9.7.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

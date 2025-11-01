@@ -30,17 +30,4 @@ class ApiHttpClient with DioMixin implements Dio {
       analyticsInterceptor,
     ]);
   }
-
-  @override
-  Future<Response> download(String urlPath, savePath,
-      {ProgressCallback? onReceiveProgress,
-      Map<String, dynamic>? queryParameters,
-      CancelToken? cancelToken,
-      bool deleteOnError = true,
-      String lengthHeader = Headers.contentLengthHeader,
-      Object? data,
-      Options? options}) {
-    // TODO: implement download
-    throw UnimplementedError();
-  }
 }
