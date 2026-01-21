@@ -6,7 +6,6 @@
 // https://opensource.org/licenses/MIT.
 
 import 'package:widget_toolkit/models.dart' as wt_models;
-import 'package:widget_toolkit/models.dart' show L10nErrorKeyProvider;
 
 import '../../../l10n/generated/l10n.dart';
 

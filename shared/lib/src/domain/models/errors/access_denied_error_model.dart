@@ -1,11 +1,9 @@
 part of 'error_model.dart';
 
-class AccessDeniedErrorModel extends ErrorModel
-    implements L10nErrorKeyProvider {
+class AccessDeniedErrorModel extends ErrorModel {
   AccessDeniedErrorModel([super.errorLogDetails]);
 
-  @override
-  String get l10nErrorKey => S.current.accessDenied;
+  String get message => S.current.accessDenied;
 
   @override
   String toString() => 'AccessDeniedError.';

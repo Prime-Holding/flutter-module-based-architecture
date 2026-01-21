@@ -58,3 +58,19 @@ extension ErrorFieldRequiredModelL10n on FieldRequiredErrorModel {
 extension ErrorServerGenericModelL10n on ErrorServerGenericModel {
   String translate(BuildContext context) => message ?? context.l10n.server;
 }
+
+extension _BadRequestErrorModelL10n on BadRequestErrorModel {
+  String translate(BuildContext context) => message ?? context.l10n.badRequest;
+}
+
+extension _ConflictErrorModelL10n on ConflictErrorModel {
+  String translate(BuildContext context) => message ?? context.l10n.conflict;
+}
+
+extension _ErrorTimeoutModelL10n on ErrorTimeoutModel {
+  String translate(BuildContext context) => message ?? context.l10n.conflict;
+}
+
+extension _NetworkErrorModelL10n on NetworkErrorModel {
+  String translate(BuildContext context) => message;
+}
