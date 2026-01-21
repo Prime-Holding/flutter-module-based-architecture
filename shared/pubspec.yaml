@@ -51,7 +51,6 @@ dev_dependencies:
   golden_toolkit: ^0.15.0
   mockito: ^5.4.5
   rx_bloc_test: ^5.0.0
-  r_flutter: ^0.9.0
   json_serializable: ^6.9.5
   retrofit_generator: ^9.7.0
   copy_with_extension_gen: ^6.0.1

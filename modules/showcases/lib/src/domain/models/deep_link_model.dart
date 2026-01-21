@@ -7,7 +7,7 @@
 
 import 'package:json_annotation/json_annotation.dart';
 
-part '../../domain/models/deep_link_model.g.dart';
+part 'deep_link_model.g.dart';
 
 @JsonSerializable()
 class DeepLinkModel {

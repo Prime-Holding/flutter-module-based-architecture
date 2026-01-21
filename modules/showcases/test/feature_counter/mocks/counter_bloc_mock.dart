@@ -5,11 +5,11 @@ import 'package:shared/shared.dart';
 import 'package:showcases/src/feature_counter/ui/blocs/counter_bloc.dart';
 import 'counter_bloc_mock.mocks.dart';
 
-@GenerateMocks([
-  CounterBlocEvents,
-  CounterBlocStates,
-  CounterBlocType,
-])
+// @GenerateMocks([
+//   CounterBlocEvents,
+//   CounterBlocStates,
+//   CounterBlocType,
+// ])
 CounterBlocType counterBlocMockFactory({
   int? count,
   ErrorModel? error,

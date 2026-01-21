@@ -6,8 +6,6 @@ import '../../methods/pin_biometric/domain/models/mfa_pin_code_payload.dart';
 import 'mfa_method.dart';
 import 'payload/mfa_payload_request.dart';
 
-part 'mfa_method_request.g.dart';
-
 @CopyWith()
 class MfaMethodRequest with EquatableMixin {
   MfaMethodRequest({
