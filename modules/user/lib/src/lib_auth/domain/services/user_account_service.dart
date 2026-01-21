@@ -39,7 +39,7 @@ class UserAccountService {
     required String password,
   }) async {
     if (username.isEmpty || password.isEmpty) {
-      throw GenericErrorModel(I18nErrorKeys.wrongEmailOrPassword);
+      throw GenericErrorModel(S.current.wrongEmailOrPassword);
     }
 
     final authToken = await _authRepository.authenticate(
@@ -70,8 +70,8 @@ class UserAccountService {
   /// Subscribe user push token
   Future<void> subscribeForNotifications({bool graceful = true}) async {
     try {
-      final notificationsSubscribed =
-          await _pushSubscriptionRepository.notificationsSubscribed();
+      final notificationsSubscribed = await _pushSubscriptionRepository
+          .notificationsSubscribed();
 
       if (notificationsSubscribed == true) {
         await _pushSubscriptionRepository.subscribeForPushNotifications();

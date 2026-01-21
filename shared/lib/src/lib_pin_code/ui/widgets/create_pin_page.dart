@@ -42,7 +42,7 @@ class _CreatePinPageState extends State<CreatePinPage> {
       appBar: AppBar(
         title: Text(
           widget.pinCodeArguments.title.isEmpty
-              ? context.l10n.libPinCode.createPinPage
+              ? context.l10n.createPinPage
               : widget.pinCodeArguments.title,
         ),
         forceMaterialTransparency: true,
@@ -79,18 +79,17 @@ class _CreatePinPageState extends State<CreatePinPage> {
   );
 
   Future<void> _isPinCodeVerified(BuildContext context) async {
-    if (widget.pinCodeArguments.title == context.l10n.libPinCode.createPin) {
+    if (widget.pinCodeArguments.title == context.l10n.createPin) {
       // TODO: Implement the logic to navigate to the next screen
       // context.read<RouterBlocType>().events.pushReplace(
       //       const CreatePinRoute(),
       //       extra: PinCodeArguments(
-      //         title: context.l10n.libPinCode.confirmPin,
+      //         title: context.l10n.confirmPin,
       //         onReturn:
       //             context.read<CreatePinBlocType>().events.checkIsPinCreated,
       //       ),
       //     );
-    } else if (widget.pinCodeArguments.title ==
-        context.l10n.libPinCode.confirmPin) {
+    } else if (widget.pinCodeArguments.title == context.l10n.confirmPin) {
       context.read<CreatePinBlocType>().events.checkIsPinCreated();
     }
   }
@@ -101,16 +100,16 @@ class _CreatePinPageState extends State<CreatePinPage> {
   ) {
     switch (message) {
       case BiometricsMessage.notSetup:
-        return context.l10n.libPinCode.biometricsNotSetup;
+        return context.l10n.biometricsNotSetup;
 
       case BiometricsMessage.notSupported:
-        return context.l10n.libPinCode.biometricsNotSupported;
+        return context.l10n.biometricsNotSupported;
 
       case BiometricsMessage.enabled:
-        return context.l10n.libPinCode.biometricsEnabled;
+        return context.l10n.biometricsEnabled;
 
       case BiometricsMessage.disabled:
-        return context.l10n.libPinCode.biometricsDisabled;
+        return context.l10n.biometricsDisabled;
     }
   }
 }

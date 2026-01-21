@@ -30,61 +30,59 @@ class UpdatePinPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => PopScope(
-        canPop: true,
-        onPopInvokedWithResult: (didPop, dynamic) =>
-            context.read<UpdateAndVerifyPinBlocType>().events.deleteSavedData(),
-        child: Scaffold(
-          appBar: AppBar(
-            title: Text(
-              pinCodeArguments.title.isEmpty
-                  ? context.l10n.libPinCode.updatePinPage
-                  : pinCodeArguments.title,
-            ),
-            forceMaterialTransparency: true,
-          ),
-          extendBodyBehindAppBar: true,
-          body: SizedBox(
-            height: MediaQuery.sizeOf(context).height,
-            child: Column(
-              children: [
-                Expanded(
-                  child: PinCodeKeyboard(
-                    mapBiometricMessageToString: (message) =>
-                        _exampleMapMessageToString(message, context),
-                    pinCodeService: context.read<UpdatePinCodeService>(),
-                    biometricsLocalDataSource:
-                        pinCodeArguments.showBiometricsButton
-                            ? context.read<BiometricsLocalDataSource>()
-                            : null,
-                    biometricsAuthDataSource:
-                        context.read<PinBiometricsAuthDataSource?>(),
-                    translateError: (error) =>
-                        error.asErrorModel().translate(context),
-                    onAuthenticated: (token) =>
-                        _isPinCodeVerified(context, token),
-                  ),
-                ),
-                RxBlocListener<UpdateAndVerifyPinBlocType, void>(
-                  state: (bloc) => bloc.states.isPinUpdated,
-                  listener: (context, isCreated) {
-                    //TODO: Implement the logic to navigate to the next screen
-                    // context
-                    //     .read<RouterBlocType>()
-                    //     .events
-                    //     .go(const ProfileRoute());
-                  },
-                ),
-              ],
-            ),
-          ),
+    canPop: true,
+    onPopInvokedWithResult: (didPop, dynamic) =>
+        context.read<UpdateAndVerifyPinBlocType>().events.deleteSavedData(),
+    child: Scaffold(
+      appBar: AppBar(
+        title: Text(
+          pinCodeArguments.title.isEmpty
+              ? context.l10n.updatePinPage
+              : pinCodeArguments.title,
         ),
-      );
+        forceMaterialTransparency: true,
+      ),
+      extendBodyBehindAppBar: true,
+      body: SizedBox(
+        height: MediaQuery.sizeOf(context).height,
+        child: Column(
+          children: [
+            Expanded(
+              child: PinCodeKeyboard(
+                mapBiometricMessageToString: (message) =>
+                    _exampleMapMessageToString(message, context),
+                pinCodeService: context.read<UpdatePinCodeService>(),
+                biometricsLocalDataSource: pinCodeArguments.showBiometricsButton
+                    ? context.read<BiometricsLocalDataSource>()
+                    : null,
+                biometricsAuthDataSource: context
+                    .read<PinBiometricsAuthDataSource?>(),
+                translateError: (error) =>
+                    error.asErrorModel().translate(context),
+                onAuthenticated: (token) => _isPinCodeVerified(context, token),
+              ),
+            ),
+            RxBlocListener<UpdateAndVerifyPinBlocType, void>(
+              state: (bloc) => bloc.states.isPinUpdated,
+              listener: (context, isCreated) {
+                //TODO: Implement the logic to navigate to the next screen
+                // context
+                //     .read<RouterBlocType>()
+                //     .events
+                //     .go(const ProfileRoute());
+              },
+            ),
+          ],
+        ),
+      ),
+    ),
+  );
 
   Future<void> _isPinCodeVerified(
     BuildContext context,
     String? updateToken,
   ) async {
-    if (pinCodeArguments.title == context.l10n.libPinCode.enterCurrentPin) {
+    if (pinCodeArguments.title == context.l10n.enterCurrentPin) {
       //TODO: Implement the logic to navigate to the next screen
       // return context
       //     .read<RouterBlocType>()
@@ -95,35 +93,37 @@ class UpdatePinPage extends StatelessWidget {
       //           updateToken: updateToken,
       //         ));
     }
-    if (pinCodeArguments.title == context.l10n.libPinCode.enterNewPin) {
+    if (pinCodeArguments.title == context.l10n.enterNewPin) {
       //TODO: Implement the logic to navigate to the next screen
       // return context
       //     .read<RouterBlocType>()
       //     .events
       //     .pushReplace(const UpdatePinRoute(),
       //         extra: PinCodeArguments(
-      //           title: context.l10n.libPinCode.confirmPin,
+      //           title: context.l10n.confirmPin,
       //           updateToken: pinCodeArguments.updateToken ?? updateToken,
       //         ));
-    } else if (pinCodeArguments.title == context.l10n.libPinCode.confirmPin) {
+    } else if (pinCodeArguments.title == context.l10n.confirmPin) {
       context.read<UpdateAndVerifyPinBlocType>().events.checkIsPinUpdated();
     }
   }
 
   String _exampleMapMessageToString(
-      BiometricsMessage message, BuildContext context) {
+    BiometricsMessage message,
+    BuildContext context,
+  ) {
     switch (message) {
       case BiometricsMessage.notSetup:
-        return context.l10n.libPinCode.biometricsNotSetup;
+        return context.l10n.biometricsNotSetup;
 
       case BiometricsMessage.notSupported:
-        return context.l10n.libPinCode.biometricsNotSupported;
+        return context.l10n.biometricsNotSupported;
 
       case BiometricsMessage.enabled:
-        return context.l10n.libPinCode.biometricsEnabled;
+        return context.l10n.biometricsEnabled;
 
       case BiometricsMessage.disabled:
-        return context.l10n.libPinCode.biometricsDisabled;
+        return context.l10n.biometricsDisabled;
     }
   }
 }

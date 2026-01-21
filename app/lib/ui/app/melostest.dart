@@ -241,7 +241,7 @@ class __MyMaterialAppState extends State<_MyMaterialApp> {
           AppI18n.delegate,
           // ...GlobalMaterialLocalizations.delegates,
         ],
-        supportedLocales: I18n.supportedLocales,
+        supportedLocales: S.delegate.supportedLocales,
         locale: _locale,
         routerConfig: context.read<AppRouter>().router,
         debugShowCheckedModeBanner: false,

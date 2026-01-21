@@ -8,13 +8,16 @@
 import 'package:widget_toolkit/models.dart' as wt_models;
 import 'package:widget_toolkit/models.dart' show L10nErrorKeyProvider;
 
-import '../../../../assets.dart';
+import '../../../l10n/generated/l10n.dart';
 
 export 'package:widget_toolkit/models.dart' show L10nErrorKeyProvider;
 
 part 'access_denied_error_model.dart';
+part 'bad_request_error_model.dart';
+part 'conflict_error_model.dart';
 part 'connection_refused_error_model.dart';
 part 'error_server_generic_model.dart';
+part 'error_timeout_model.dart';
 part 'field_error_model.dart';
 part 'field_required_error_model.dart';
 part 'network_error_model.dart';

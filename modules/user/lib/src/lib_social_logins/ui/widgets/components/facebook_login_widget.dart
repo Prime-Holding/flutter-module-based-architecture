@@ -41,12 +41,13 @@ class FacebookLoginWidget extends StatelessWidget {
           builder: (context, snapshot, bloc) => SocialLoginButton(
             isLoading: (snapshot.data ?? false) ? false : true,
             backgroundColor: context.designSystem.colors.facebookBackground,
-            text: context.l10n.featureLogin.facebookLogin,
+            text: context.l10n.facebookLogin,
             textStyle: context.designSystem.typography.facebookButtonText,
             progressIndicatorColor:
                 context.designSystem.colors.facebookTextColor,
-            onPressed:
-                (snapshot.data ?? false) ? null : () => bloc.events.login(),
+            onPressed: (snapshot.data ?? false)
+                ? null
+                : () => bloc.events.login(),
             child: SvgPicture.asset(
               context.designSystem.images.facebookLogo,
               colorFilter: ColorFilter.mode(
@@ -65,48 +66,39 @@ class FacebookLoginWidget extends StatelessWidget {
     }
 
     return MultiProvider(
-      providers: [
-        ..._dataSources,
-        ..._repositories,
-        ..._services,
-        ..._blocs,
-      ],
+      providers: [..._dataSources, ..._repositories, ..._services, ..._blocs],
       child: current,
     );
   }
 
   List<Provider> get _dataSources => [
-        Provider<FacebookAuthDataSource>(
-            create: (context) =>
-                FacebookAuthDataSource(context.read<ApiHttpClient>())),
-        Provider<FacebookCredentialDataSource>(
-            create: (context) => FacebookCredentialDataSource()),
-      ];
+    Provider<FacebookAuthDataSource>(
+      create: (context) =>
+          FacebookAuthDataSource(context.read<ApiHttpClient>()),
+    ),
+    Provider<FacebookCredentialDataSource>(
+      create: (context) => FacebookCredentialDataSource(),
+    ),
+  ];
 
   List<Provider> get _repositories => [
-        Provider<FacebookAuthRepository>(
-          create: (context) => FacebookAuthRepository(
-            context.read(),
-            context.read(),
-            context.read(),
-          ),
-        )
-      ];
+    Provider<FacebookAuthRepository>(
+      create: (context) => FacebookAuthRepository(
+        context.read(),
+        context.read(),
+        context.read(),
+      ),
+    ),
+  ];
   List<Provider> get _services => [
-        Provider<SocialLoginService>(
-          create: (context) => FacebookAuthService(
-            context.read(),
-            context.read(),
-          ),
-        ),
-      ];
+    Provider<SocialLoginService>(
+      create: (context) => FacebookAuthService(context.read(), context.read()),
+    ),
+  ];
 
   List<RxBlocProvider> get _blocs => [
-        RxBlocProvider<SocialLoginBlocType>(
-          create: (context) => SocialLoginBloc(
-            context.read(),
-            context.read(),
-          ),
-        ),
-      ];
+    RxBlocProvider<SocialLoginBlocType>(
+      create: (context) => SocialLoginBloc(context.read(), context.read()),
+    ),
+  ];
 }

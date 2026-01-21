@@ -32,7 +32,7 @@ dependencies:
   provider: ^6.1.5
   rx_bloc: ^6.0.0
   rxdart: ^0.28.0
-  shared: any
+  shared:
   shared_preferences: ^2.5.3
   shelf: ^1.4.2
   shelf_router: ^1.1.4
@@ -51,7 +51,6 @@ dev_dependencies:
   json_serializable: ^6.9.0
   mockito: ^5.4.5
   patrol: ^3.13.1
-  r_flutter: 0.9.0
   retrofit_generator: ^9.1.5
   rx_bloc_generator: ^8.0.1
   rx_bloc_test: ^5.0.0

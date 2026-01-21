@@ -18,52 +18,52 @@ class CounterPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: customAppBar(
-          context,
-          actions: [
-            RxLoadingBuilder<CounterBlocType>(
-              state: (bloc) => bloc.states.isLoading,
-              builder: (context, isLoading, tag, bloc) => UpdateButton(
-                key: K.counterReload,
-                isActive: !isLoading,
-                onPressed: () => bloc.events.reload(),
-              ),
-            ),
-          ],
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              RxBlocBuilder<CounterBlocType, int>(
-                state: (bloc) => bloc.states.count,
-                builder: (context, countState, bloc) =>
-                    _buildCount(context, countState),
-              ),
-              AppErrorModalWidget<CounterBlocType>(
-                key: K.counterError,
-                errorState: (bloc) => bloc.states.errors,
-              ),
-              AppErrorModalWidget<UserAccountBlocType>(
-                errorState: (bloc) => bloc.states.errors,
-              ),
-            ],
+    appBar: customAppBar(
+      context,
+      actions: [
+        RxLoadingBuilder<CounterBlocType>(
+          state: (bloc) => bloc.states.isLoading,
+          builder: (context, isLoading, tag, bloc) => UpdateButton(
+            key: K.counterReload,
+            isActive: !isLoading,
+            onPressed: () => bloc.events.reload(),
           ),
         ),
-        floatingActionButton: _buildActionButtons(context),
-      );
+      ],
+    ),
+    body: Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          RxBlocBuilder<CounterBlocType, int>(
+            state: (bloc) => bloc.states.count,
+            builder: (context, countState, bloc) =>
+                _buildCount(context, countState),
+          ),
+          AppErrorModalWidget<CounterBlocType>(
+            key: K.counterError,
+            errorState: (bloc) => bloc.states.errors,
+          ),
+          AppErrorModalWidget<UserAccountBlocType>(
+            errorState: (bloc) => bloc.states.errors,
+          ),
+        ],
+      ),
+    ),
+    floatingActionButton: _buildActionButtons(context),
+  );
 
   Widget _buildCount(BuildContext context, AsyncSnapshot<int> snapshot) =>
       snapshot.hasData
-          ? Text(
-              snapshot.data!.toString(),
-              key: K.counterCount,
-              style: context.designSystem.typography.counterText,
-            )
-          : Text(
-              snapshot.connectionState.toString(),
-              style: context.designSystem.typography.h2Med16,
-            );
+      ? Text(
+          snapshot.data!.toString(),
+          key: K.counterCount,
+          style: context.designSystem.typography.counterText,
+        )
+      : Text(
+          snapshot.connectionState.toString(),
+          style: context.designSystem.typography.h2Med16,
+        );
 
   Widget _buildActionButtons(BuildContext context) =>
       RxLoadingBuilder<CounterBlocType>(
@@ -75,7 +75,7 @@ class CounterPage extends StatelessWidget {
               floatingActionButtonKey: K.counterIncrement,
               appLoadingIndicatorKey: K.appLoadingIndicatorIncrement,
               icon: Icon(context.designSystem.icons.plusSign),
-              tooltip: context.l10n.featureCounter.increment,
+              tooltip: context.l10n.increment,
               onPressed: isLoading ? null : bloc.events.increment,
               loading: isLoading && tag == CounterBloc.tagIncrement,
               heroTag: 'increment',
@@ -85,7 +85,7 @@ class CounterPage extends StatelessWidget {
               floatingActionButtonKey: K.counterDecrement,
               appLoadingIndicatorKey: K.appLoadingIndicatorDecrement,
               icon: Icon(context.designSystem.icons.minusSign),
-              tooltip: context.l10n.featureCounter.decrement,
+              tooltip: context.l10n.decrement,
               onPressed: isLoading ? null : bloc.events.decrement,
               loading: isLoading && tag == CounterBloc.tagDecrement,
               heroTag: 'decrement',

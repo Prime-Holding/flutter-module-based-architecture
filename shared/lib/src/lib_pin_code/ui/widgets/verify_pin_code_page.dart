@@ -29,65 +29,67 @@ class VerifyPinCodePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => PopScope(
-        canPop: true,
-        onPopInvokedWithResult: (didPop, dynamic) =>
-            context.read<UpdateAndVerifyPinBlocType>().events.deleteSavedData(),
-        child: Scaffold(
-          appBar: AppBar(
-            title: Text(
-              pinCodeArguments.title.isEmpty
-                  ? context.l10n.libPinCode.verifyPinCodePage
-                  : pinCodeArguments.title,
-            ),
-            forceMaterialTransparency: true,
-          ),
-          extendBodyBehindAppBar: true,
-          body: SizedBox(
-            height: MediaQuery.sizeOf(context).height,
-            child: Column(
-              children: [
-                Expanded(
-                  child: PinCodeKeyboard(
-                    mapBiometricMessageToString: (message) =>
-                        _exampleMapMessageToString(message, context),
-                    pinCodeService: context.read<VerifyPinCodeService>(),
-// Comment the line bellow in order not to use biometrics
-// authentication
-                    biometricsLocalDataSource:
-                        context.read<BiometricsLocalDataSource>(),
-                    biometricsAuthDataSource:
-                        context.read<PinBiometricsAuthDataSource?>(),
-                    translateError: (error) =>
-                        error.asErrorModel().translate(context),
-                    onAuthenticated: (_) => _isPinCodeVerified(context),
-                  ),
-                ),
-              ],
-            ),
-          ),
+    canPop: true,
+    onPopInvokedWithResult: (didPop, dynamic) =>
+        context.read<UpdateAndVerifyPinBlocType>().events.deleteSavedData(),
+    child: Scaffold(
+      appBar: AppBar(
+        title: Text(
+          pinCodeArguments.title.isEmpty
+              ? context.l10n.verifyPinCodePage
+              : pinCodeArguments.title,
         ),
-      );
+        forceMaterialTransparency: true,
+      ),
+      extendBodyBehindAppBar: true,
+      body: SizedBox(
+        height: MediaQuery.sizeOf(context).height,
+        child: Column(
+          children: [
+            Expanded(
+              child: PinCodeKeyboard(
+                mapBiometricMessageToString: (message) =>
+                    _exampleMapMessageToString(message, context),
+                pinCodeService: context.read<VerifyPinCodeService>(),
+                // Comment the line bellow in order not to use biometrics
+                // authentication
+                biometricsLocalDataSource: context
+                    .read<BiometricsLocalDataSource>(),
+                biometricsAuthDataSource: context
+                    .read<PinBiometricsAuthDataSource?>(),
+                translateError: (error) =>
+                    error.asErrorModel().translate(context),
+                onAuthenticated: (_) => _isPinCodeVerified(context),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ),
+  );
 
   Future<void> _isPinCodeVerified(BuildContext context) async {
     context.read<CoordinatorBlocType>().events.pinCodeConfirmed(
-          isPinCodeConfirmed: true,
-        );
+      isPinCodeConfirmed: true,
+    );
   }
 
   String _exampleMapMessageToString(
-      BiometricsMessage message, BuildContext context) {
+    BiometricsMessage message,
+    BuildContext context,
+  ) {
     switch (message) {
       case BiometricsMessage.notSetup:
-        return context.l10n.libPinCode.biometricsNotSetup;
+        return context.l10n.biometricsNotSetup;
 
       case BiometricsMessage.notSupported:
-        return context.l10n.libPinCode.biometricsNotSupported;
+        return context.l10n.biometricsNotSupported;
 
       case BiometricsMessage.enabled:
-        return context.l10n.libPinCode.biometricsEnabled;
+        return context.l10n.biometricsEnabled;
 
       case BiometricsMessage.disabled:
-        return context.l10n.libPinCode.biometricsDisabled;
+        return context.l10n.biometricsDisabled;
     }
   }
 }

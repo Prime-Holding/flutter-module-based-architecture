@@ -21,84 +21,80 @@ import 'components/update_state_on_selection.dart';
 import 'components/widget_section.dart';
 
 class PickersPage extends StatelessWidget {
-  const PickersPage({
-    required this.pageController,
-    super.key,
-  });
+  const PickersPage({required this.pageController, super.key});
 
   final PageController pageController;
 
   @override
   Widget build(BuildContext context) => SingleChildScrollView(
-        child: Column(
-          children: [
-            WidgetSection(
-              description:
-                  context.l10n.featureWidgetToolkit.itemPickerSingleSelect,
-              child: UpdateStateOnSelection<DataModel>(
-                builder: (updatedData, updateFunction) => OutlineFillButton(
-                  text: context.l10n.featureWidgetToolkit.selectOneItem,
-                  onPressed: () => showItemPickerBottomSheet<DataModel>(
-                    context: context,
-                    title: context.l10n.featureWidgetToolkit.selectASingleItem,
-                    selectedItems: updatedData,
-                    callback: (data) => updateFunction.call(data),
-                    service: DataService(),
-                    configuration:
-                        const ItemPickerConfiguration(isMultiSelect: false),
-                  ),
+    child: Column(
+      children: [
+        WidgetSection(
+          description: context.l10n.itemPickerSingleSelect,
+          child: UpdateStateOnSelection<DataModel>(
+            builder: (updatedData, updateFunction) => OutlineFillButton(
+              text: context.l10n.selectOneItem,
+              onPressed: () => showItemPickerBottomSheet<DataModel>(
+                context: context,
+                title: context.l10n.selectASingleItem,
+                selectedItems: updatedData,
+                callback: (data) => updateFunction.call(data),
+                service: DataService(),
+                configuration: const ItemPickerConfiguration(
+                  isMultiSelect: false,
                 ),
               ),
             ),
-            WidgetSection(
-              description:
-                  context.l10n.featureWidgetToolkit.itemPickerMultiSelect,
-              child: UpdateStateOnSelection<DataModel>(
-                builder: (updatedData, updateFunction) => OutlineFillButton(
-                  text: context.l10n.featureWidgetToolkit.selectAFewItems,
-                  onPressed: () => showItemPickerBottomSheet<DataModel>(
-                      context: context,
-                      title: context.l10n.featureWidgetToolkit.selectAFewItems,
-                      selectedItems: updatedData,
-                      callback: (data) => updateFunction.call(data),
-                      service: DataService(),
-                      configuration:
-                          const ItemPickerConfiguration(isMultiSelect: true)),
-                ),
-              ),
-            ),
-            WidgetSection(
-              description: context.l10n.featureWidgetToolkit.searchPicker,
-              child: UpdateStateOnSelection<CountryModel>(
-                getString: (CountryModel element) => element.itemDisplayName,
-                builder: (updatedData, updateFunction) => OutlineFillButton(
-                  text: context
-                      .l10n.featureWidgetToolkit.selectAnItemFromLongList,
-                  onPressed: () => showSearchPickerBottomSheet<CountryModel>(
-                    context: context,
-                    title: context.l10n.featureWidgetToolkit.selectCountry,
-                    hintText: context.l10n.featureWidgetToolkit.typeSubstring,
-                    retryText: context.l10n.featureWidgetToolkit.retry,
-                    selectedItem:
-                        updatedData.isNotEmpty ? updatedData[0] : null,
-                    onItemTap: (item) =>
-                        updateFunction.call(item != null ? [item] : []),
-                    service: SearchService(SearchCountryRepository()),
-                    emptyBuilder: () => Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
-                      child: MessagePanelWidget(
-                        message:
-                            context.l10n.featureWidgetToolkit.thereAreNoResults,
-                        messageState: MessagePanelState.neutral,
-                      ),
-                    ),
-                    modalConfiguration: const SearchPickerModalConfiguration(
-                        safeAreaBottom: true),
-                  ),
-                ),
-              ),
-            ),
-          ],
+          ),
         ),
-      );
+        WidgetSection(
+          description: context.l10n.itemPickerMultiSelect,
+          child: UpdateStateOnSelection<DataModel>(
+            builder: (updatedData, updateFunction) => OutlineFillButton(
+              text: context.l10n.selectAFewItems,
+              onPressed: () => showItemPickerBottomSheet<DataModel>(
+                context: context,
+                title: context.l10n.selectAFewItems,
+                selectedItems: updatedData,
+                callback: (data) => updateFunction.call(data),
+                service: DataService(),
+                configuration: const ItemPickerConfiguration(
+                  isMultiSelect: true,
+                ),
+              ),
+            ),
+          ),
+        ),
+        WidgetSection(
+          description: context.l10n.searchPicker,
+          child: UpdateStateOnSelection<CountryModel>(
+            getString: (CountryModel element) => element.itemDisplayName,
+            builder: (updatedData, updateFunction) => OutlineFillButton(
+              text: context.l10n.selectAnItemFromLongList,
+              onPressed: () => showSearchPickerBottomSheet<CountryModel>(
+                context: context,
+                title: context.l10n.selectCountry,
+                hintText: context.l10n.typeSubstring,
+                retryText: context.l10n.retry,
+                selectedItem: updatedData.isNotEmpty ? updatedData[0] : null,
+                onItemTap: (item) =>
+                    updateFunction.call(item != null ? [item] : []),
+                service: SearchService(SearchCountryRepository()),
+                emptyBuilder: () => Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  child: MessagePanelWidget(
+                    message: context.l10n.thereAreNoResults,
+                    messageState: MessagePanelState.neutral,
+                  ),
+                ),
+                modalConfiguration: const SearchPickerModalConfiguration(
+                  safeAreaBottom: true,
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
+    ),
+  );
 }

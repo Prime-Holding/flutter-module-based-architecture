@@ -61,15 +61,15 @@ class PushNotificationRepository {
           case AuthorizationStatus.provisional:
             return true;
           case AuthorizationStatus.denied:
-            throw GenericErrorModel(I18nErrorKeys.notificationsDisabledMessage);
+            throw GenericErrorModel(S.current.notificationsDisabledMessage);
           case AuthorizationStatus.notDetermined:
-            throw GenericErrorModel(I18nErrorKeys.accessDenied);
+            throw GenericErrorModel(S.current.accessDenied);
         }
       });
 
   Future<String?> getToken({String? vapidKey}) => _errorMapper
-          .execute(() => _firebaseMessaging.getToken(vapidKey: vapidKey))
-          .onError((error, stackTrace) {
+      .execute(() => _firebaseMessaging.getToken(vapidKey: vapidKey))
+      .onError((error, stackTrace) {
         log(error.toString());
         return null;
       });
@@ -86,11 +86,12 @@ class PushNotificationRepository {
   Future<void> _setNotificationsEnabledUser(bool enabled) => _errorMapper
       .execute(() => _localDataSource.setNotificationsEnabled(enabled));
 
-  Future<bool> areNotificationsEnabledDevice() =>
-      _errorMapper.execute(() async =>
-          (await _firebaseMessaging.getNotificationSettings())
-              .authorizationStatus ==
-          AuthorizationStatus.authorized);
+  Future<bool> areNotificationsEnabledDevice() => _errorMapper.execute(
+    () async =>
+        (await _firebaseMessaging.getNotificationSettings())
+            .authorizationStatus ==
+        AuthorizationStatus.authorized,
+  );
 
   Future<bool> areNotificationsEnabled() async =>
       await notificationsEnabledUser() && await areNotificationsEnabledDevice();
@@ -102,7 +103,7 @@ class PushNotificationRepository {
       await _performAction(_pushDataSource.subscribePushToken);
       await _setNotificationsEnabledUser(true);
     } else {
-      throw GenericErrorModel(I18nErrorKeys.notificationsDisabledMessage);
+      throw GenericErrorModel(S.current.notificationsDisabledMessage);
     }
   }
 
@@ -113,7 +114,8 @@ class PushNotificationRepository {
   }
 
   Future<void> _performAction(
-      Function(PushNotificationDataRequestModel) action) async {
+    Function(PushNotificationDataRequestModel) action,
+  ) async {
     final token = await getToken();
     if (token != null) {
       final requestModel = PushNotificationDataRequestModel(token);

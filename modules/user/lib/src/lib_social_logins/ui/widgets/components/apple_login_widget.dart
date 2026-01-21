@@ -42,10 +42,11 @@ class AppleLoginWidget extends StatelessWidget {
             isLoading: (snapshot.data ?? false) ? false : true,
             textStyle: context.designSystem.typography.appleButtonText,
             backgroundColor: context.designSystem.colors.appleBackground,
-            text: context.l10n.featureLogin.appleLogin,
+            text: context.l10n.appleLogin,
             progressIndicatorColor: context.designSystem.colors.appleButtonText,
-            onPressed:
-                (snapshot.data ?? false) ? null : () => bloc.events.login(),
+            onPressed: (snapshot.data ?? false)
+                ? null
+                : () => bloc.events.login(),
             child: SvgPicture.asset(
               context.designSystem.images.appleLogo,
               height: context.designSystem.spacing.xl,
@@ -64,52 +65,37 @@ class AppleLoginWidget extends StatelessWidget {
     }
 
     return MultiProvider(
-      providers: [
-        ..._dataSources,
-        ..._repositories,
-        ..._services,
-        ..._blocs,
-      ],
+      providers: [..._dataSources, ..._repositories, ..._services, ..._blocs],
       child: current,
     );
   }
 
   List<Provider> get _dataSources => [
-        Provider<AppleAuthDataSource>(
-          create: (context) => AppleAuthDataSource(
-            context.read<ApiHttpClient>(),
-          ),
-        ),
-        Provider<AppleCredentialDataSource>(
-          create: (context) => AppleCredentialDataSource(),
-        ),
-      ];
+    Provider<AppleAuthDataSource>(
+      create: (context) => AppleAuthDataSource(context.read<ApiHttpClient>()),
+    ),
+    Provider<AppleCredentialDataSource>(
+      create: (context) => AppleCredentialDataSource(),
+    ),
+  ];
 
   List<Provider> get _repositories => [
-        Provider<AppleAuthRepository>(
-          create: (context) => AppleAuthRepository(
-            context.read(),
-            context.read(),
-            context.read(),
-          ),
-        ),
-      ];
+    Provider<AppleAuthRepository>(
+      create: (context) =>
+          AppleAuthRepository(context.read(), context.read(), context.read()),
+    ),
+  ];
 
   List<Provider> get _services => [
-        Provider<SocialLoginService>(
-          create: (context) => AppleSocialLoginService(
-            context.read(),
-            context.read(),
-          ),
-        ),
-      ];
+    Provider<SocialLoginService>(
+      create: (context) =>
+          AppleSocialLoginService(context.read(), context.read()),
+    ),
+  ];
 
   List<RxBlocProvider> get _blocs => [
-        RxBlocProvider<SocialLoginBlocType>(
-          create: (context) => SocialLoginBloc(
-            context.read(),
-            context.read(),
-          ),
-        ),
-      ];
+    RxBlocProvider<SocialLoginBlocType>(
+      create: (context) => SocialLoginBloc(context.read(), context.read()),
+    ),
+  ];
 }

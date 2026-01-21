@@ -21,37 +21,32 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        resizeToAvoidBottomInset: false,
-        appBar: customAppBar(
-          context,
-          title: context.l10n.featureLogin.loginPageTitle,
+    resizeToAvoidBottomInset: false,
+    appBar: customAppBar(context, title: context.l10n.loginPageTitle),
+    body: SafeArea(
+      child: Padding(
+        padding: EdgeInsets.symmetric(
+          horizontal: context.designSystem.spacing.xxl2,
         ),
-        body: SafeArea(
-          child: Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: context.designSystem.spacing.xxl2,
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                LoginForm(
-                  title: context.l10n.featureLogin.loginCredentialsHint,
-                ),
-                SizedBox(height: context.designSystem.spacing.xs),
-                const FacebookLoginWidget(),
-                if (Platform.isIOS)
-                  Column(
-                    children: [
-                      SizedBox(height: context.designSystem.spacing.xs),
-                      const AppleLoginWidget(),
-                    ],
-                  ),
-                SizedBox(height: context.designSystem.spacing.xs),
-                const GoogleLoginWidget(),
-              ],
-            ),
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            LoginForm(title: context.l10n.loginCredentialsHint),
+            SizedBox(height: context.designSystem.spacing.xs),
+            const FacebookLoginWidget(),
+            if (Platform.isIOS)
+              Column(
+                children: [
+                  SizedBox(height: context.designSystem.spacing.xs),
+                  const AppleLoginWidget(),
+                ],
+              ),
+            SizedBox(height: context.designSystem.spacing.xs),
+            const GoogleLoginWidget(),
+          ],
         ),
-      );
+      ),
+    ),
+  );
 }
