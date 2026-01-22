@@ -36,26 +36,26 @@ class _WidgetToolkitPageState extends State<WidgetToolkitPage> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    title = context.l10n.featureWidgetToolkit.commonComponents;
+    title = context.l10n.commonComponents;
   }
 
   void maintainAppBar() {
     pageController.addListener(() {
       if (pageController.page == 0) {
         setState(() {
-          title = context.l10n.featureWidgetToolkit.commonComponents;
+          title = context.l10n.commonComponents;
           nextPageIndex = 1;
         });
       }
       if (pageController.page == 1) {
         setState(() {
-          title = context.l10n.featureWidgetToolkit.pickers;
+          title = context.l10n.pickers;
           nextPageIndex = 2;
         });
       }
       if (pageController.page == 2) {
         setState(() {
-          title = context.l10n.featureWidgetToolkit.editFields;
+          title = context.l10n.editFields;
           nextPageIndex = 0;
         });
       }
@@ -64,30 +64,30 @@ class _WidgetToolkitPageState extends State<WidgetToolkitPage> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: AppBar(title: Text(title), actions: [
-          IconButton(
-              onPressed: () {
-                pageController.animateToPage(nextPageIndex,
-                    duration: const Duration(milliseconds: 800),
-                    curve: Curves.ease);
-              },
-              icon: const Icon(Icons.arrow_forward))
-        ]),
-        body: PageView(
-          controller: pageController,
-          children: <Widget>[
-            CommonComponentsPage(
-              pageController: pageController,
-            ),
-            PickersPage(
-              pageController: pageController,
-            ),
-            EditFieldsPage(
-              pageController: pageController,
-            ),
-          ],
+    appBar: AppBar(
+      title: Text(title),
+      actions: [
+        IconButton(
+          onPressed: () {
+            pageController.animateToPage(
+              nextPageIndex,
+              duration: const Duration(milliseconds: 800),
+              curve: Curves.ease,
+            );
+          },
+          icon: const Icon(Icons.arrow_forward),
         ),
-      );
+      ],
+    ),
+    body: PageView(
+      controller: pageController,
+      children: <Widget>[
+        CommonComponentsPage(pageController: pageController),
+        PickersPage(pageController: pageController),
+        EditFieldsPage(pageController: pageController),
+      ],
+    ),
+  );
 
   @override
   void dispose() {

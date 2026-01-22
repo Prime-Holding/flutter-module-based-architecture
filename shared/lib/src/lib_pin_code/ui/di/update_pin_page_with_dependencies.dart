@@ -24,22 +24,18 @@ class UpdatePinPageWithDependencies extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => MultiProvider(
-        providers: [
-          ..._services(context),
-        ],
-        child: UpdatePinPage(
-          pinCodeArguments: pinCodeArguments,
-        ),
-      );
+    providers: [..._services(context)],
+    child: UpdatePinPage(pinCodeArguments: pinCodeArguments),
+  );
 
   List<SingleChildStatelessWidget> _services(BuildContext context) => [
-        Provider<UpdatePinCodeService>(
-          create: (_) => UpdatePinCodeService(
-            context.read(),
-            token: pinCodeArguments.updateToken,
-            isVerificationPinProcess: pinCodeArguments.title ==
-                context.l10n.libPinCode.enterCurrentPin,
-          ),
-        ),
-      ];
+    Provider<UpdatePinCodeService>(
+      create: (_) => UpdatePinCodeService(
+        context.read(),
+        token: pinCodeArguments.updateToken,
+        isVerificationPinProcess:
+            pinCodeArguments.title == context.l10n.enterCurrentPin,
+      ),
+    ),
+  ];
 }

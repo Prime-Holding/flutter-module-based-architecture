@@ -36,10 +36,6 @@ import 'src/lib_pin_code/domain/services/pin_biometrics_service.dart';
 import 'src/lib_pin_code/domain/services/verify_pin_code_service.dart';
 import 'src/lib_router/ui/blocs/router_bloc.dart';
 import 'src/lib_router/domain/services/router_service.dart';
-import 'src/lib_translations/data/data_sources/translations_data_source.dart';
-import 'src/lib_translations/data/data_sources/translations_remote_data_source.dart';
-import 'src/lib_translations/data/repositories/translations_repository.dart';
-import 'src/lib_translations/domain/services/translations_service.dart';
 
 List<SingleChildWidget> dependencies(EnvironmentConfig config) => [
   ..._mapper,
@@ -141,10 +137,7 @@ List<SingleChildWidget> _dataSources(EnvironmentConfig config) => [
     create: (context) =>
         PermissionsRemoteDataSource(context.read<ApiHttpClient>()),
   ),
-  Provider<TranslationsDataSource>(
-    create: (context) =>
-        TranslationsRemoteDataSource(context.read<ApiHttpClient>()),
-  ),
+
   //
 ];
 
@@ -164,9 +157,6 @@ List<SingleChildWidget> _repositories(EnvironmentConfig config) => [
   ),
   Provider<PermissionsRepository>(
     create: (context) => PermissionsRepository(context.read(), context.read()),
-  ),
-  Provider<TranslationsRepository>(
-    create: (context) => TranslationsRepository(context.read(), context.read()),
   ),
   //
   //
@@ -191,9 +181,6 @@ List<SingleChildWidget> get _services => [
   ),
   Provider<PermissionsService>(
     create: (context) => PermissionsService(context.read()),
-  ),
-  Provider<TranslationsService>(
-    create: (context) => TranslationsService(context.read()),
   ),
   Provider<RouterService>(
     create: (context) =>

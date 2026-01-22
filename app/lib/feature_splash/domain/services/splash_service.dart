@@ -10,12 +10,9 @@ import 'package:shared/shared.dart';
 class SplashService {
   SplashService(
     PermissionsService permissionsService,
-    TranslationsService translationsService,
-  )   : _permissionsService = permissionsService,
-        _translationsService = translationsService;
+  ) : _permissionsService = permissionsService;
 
   final PermissionsService _permissionsService;
-  final TranslationsService _translationsService;
 
   bool _appInitialized = false;
 
@@ -27,7 +24,6 @@ class SplashService {
 
   List<Future<void>> get _nomenclatures => [
         _permissionsService.load(),
-        _translationsService.load(),
       ];
 
   bool get isAppInitialized => _appInitialized;

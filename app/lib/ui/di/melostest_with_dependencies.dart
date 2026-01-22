@@ -77,7 +77,6 @@ class MelostestWithDependencies extends StatelessWidget {
         Provider<SplashService>(
           create: (context) => SplashService(
             context.read(),
-            context.read(),
           ),
         ),
       ];

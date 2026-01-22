@@ -17,48 +17,43 @@ import '../utils/edit_address_custom_localisations.dart';
 import 'components/widget_section.dart';
 
 class EditFieldsPage extends StatelessWidget {
-  const EditFieldsPage({
-    required this.pageController,
-    super.key,
-  });
+  const EditFieldsPage({required this.pageController, super.key});
 
   final PageController pageController;
 
   @override
   Widget build(BuildContext context) => SingleChildScrollView(
-        child: Column(
-          children: [
-            WidgetSection(
-              description: context.l10n.featureWidgetToolkit.textFieldDialog,
-              child: TextFieldDialog<String>(
-                translateError: (error) =>
-                    ErrorModelFieldL10n.translateError<String>(error, context),
-                label: context.l10n.featureWidgetToolkit.textFieldLabel,
-                value: context.l10n.featureWidgetToolkit.nameValue,
-                validator: LocalAddressFieldService(),
-                header: context.l10n.featureWidgetToolkit.headerValue,
-                fillButtonText:
-                    context.l10n.featureWidgetToolkit.textFieldButtonText,
-              ),
-            ),
-            WidgetSection(
-              description: context.l10n.featureWidgetToolkit.editAddress,
-              child: EditAddressWidget<CountryModel>(
-                translateError: (error) =>
-                    ErrorModelFieldL10n.translateError<String>(error, context),
-                service: context.read<CustomEditAddressService<CountryModel>>(),
-                onSaved: (address) => showBlurredBottomSheet(
-                  context: context,
-                  builder: (context) => MessagePanelWidget(
-                    message: address.fullAddress,
-                    messageState: MessagePanelState.informative,
-                  ),
-                ),
-                localizedStrings:
-                    context.read<EditAddressCustomLocalisations>(),
-              ),
-            ),
-          ],
+    child: Column(
+      children: [
+        WidgetSection(
+          description: context.l10n.textFieldDialog,
+          child: TextFieldDialog<String>(
+            translateError: (error) =>
+                ErrorModelFieldL10n.translateError<String>(error, context),
+            label: context.l10n.textFieldLabel,
+            value: context.l10n.nameValue,
+            validator: LocalAddressFieldService(),
+            header: context.l10n.headerValue,
+            fillButtonText: context.l10n.textFieldButtonText,
+          ),
         ),
-      );
+        WidgetSection(
+          description: context.l10n.editAddress,
+          child: EditAddressWidget<CountryModel>(
+            translateError: (error) =>
+                ErrorModelFieldL10n.translateError<String>(error, context),
+            service: context.read<CustomEditAddressService<CountryModel>>(),
+            onSaved: (address) => showBlurredBottomSheet(
+              context: context,
+              builder: (context) => MessagePanelWidget(
+                message: address.fullAddress,
+                messageState: MessagePanelState.informative,
+              ),
+            ),
+            localizedStrings: context.read<EditAddressCustomLocalisations>(),
+          ),
+        ),
+      ],
+    ),
+  );
 }

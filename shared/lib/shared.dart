@@ -13,7 +13,7 @@ export 'src/domain/models/errors/error_model.dart';
 
 export 'src/ui/blocs/coordinator_bloc.dart';
 
-export 'assets.dart';
+export 'src/l10n/generated/l10n.dart';
 
 export 'src/l10n/l10n.dart';
 export 'src/l10n/melostest_app_i18n.dart';
@@ -50,8 +50,5 @@ export 'src/lib_router/domain/models/route_data_model.dart';
 export 'src/lib_router/domain/services/router_service.dart';
 export 'src/lib_router/domain/services/router_resolver_service.dart';
 export 'src/lib_router/ui/blocs/router_bloc.dart';
-
-export 'src/lib_translations/ui/di/translations_dependencies.dart';
-export 'src/lib_translations/domain/services/translations_service.dart';
 
 export 'src/ui/widgets/components/app_error_modal_widget.dart';

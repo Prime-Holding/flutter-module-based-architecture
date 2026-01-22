@@ -45,41 +45,42 @@ class ShowcasePage extends StatelessWidget {
 }
 
 List<({String title, String subtitle, AppRoute route, Icon icon})> getFeatures(
-    BuildContext context) {
+  BuildContext context,
+) {
   return [
     (
-      title: context.l10n.featureShowcase.counterShowcase,
-      subtitle: context.l10n.featureShowcase.counterShowcaseDescription,
+      title: context.l10n.counterShowcase,
+      subtitle: context.l10n.counterShowcaseDescription,
       route: CounterRoute(),
       icon: context.designSystem.icons.calculateIcon,
     ),
     (
-      title: context.l10n.featureShowcase.widgetToolkitShowcase,
-      subtitle: context.l10n.featureShowcase.widgetToolkitShowcaseDescription,
+      title: context.l10n.widgetToolkitShowcase,
+      subtitle: context.l10n.widgetToolkitShowcaseDescription,
       route: WidgetToolkitRoute(),
       icon: context.designSystem.icons.widgetIcon,
     ),
     (
-      title: context.l10n.featureShowcase.qrCodeShowcase,
-      subtitle: context.l10n.featureShowcase.qrCodeShowcaseDescription,
+      title: context.l10n.qrCodeShowcase,
+      subtitle: context.l10n.qrCodeShowcaseDescription,
       route: QrCodeRoute(),
       icon: context.designSystem.icons.qrCode,
     ),
     (
-      title: context.l10n.featureShowcase.deepLinkShowcase,
-      subtitle: context.l10n.featureShowcase.deepLinkShowcaseDescription,
+      title: context.l10n.deepLinkShowcase,
+      subtitle: context.l10n.deepLinkShowcaseDescription,
       route: DeepLinksRoute(),
       icon: context.designSystem.icons.linkIcon,
     ),
     (
-      title: context.l10n.featureShowcase.mfaShowcase,
-      subtitle: context.l10n.featureShowcase.mfaShowcaseDescription,
+      title: context.l10n.mfaShowcase,
+      subtitle: context.l10n.mfaShowcaseDescription,
       route: FeatureMfaRoute(),
       icon: context.designSystem.icons.pin,
     ),
     (
-      title: context.l10n.featureShowcase.otpShowcase,
-      subtitle: context.l10n.featureShowcase.otpShowcaseDescription,
+      title: context.l10n.otpShowcase,
+      subtitle: context.l10n.otpShowcaseDescription,
       route: FeatureOtpRoute(),
       icon: context.designSystem.icons.otp,
     ),

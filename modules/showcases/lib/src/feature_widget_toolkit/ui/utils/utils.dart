@@ -31,9 +31,8 @@ extension RxFieldExceptionFatory on RxFieldException {
   static RxFieldException<T> fromFormField<T>(
     FieldErrorModel formFieldModel,
     BuildContext context,
-  ) =>
-      RxFieldException<T>(
-        error: context.l10n.getString(formFieldModel.errorKey) ?? '',
-        fieldValue: formFieldModel.fieldValue,
-      );
+  ) => RxFieldException<T>(
+    error: context.l10n.getString(formFieldModel.errorValue) ?? '',
+    fieldValue: formFieldModel.fieldValue,
+  );
 }

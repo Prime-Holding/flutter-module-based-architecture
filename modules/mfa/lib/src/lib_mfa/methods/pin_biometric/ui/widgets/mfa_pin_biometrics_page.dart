@@ -16,50 +16,45 @@ import '../../../../extensions/exception_extensions.dart';
 import '../../domain/services/mfa_pincode_service.dart';
 
 class MfaPinBiometricsPage extends StatelessWidget {
-  const MfaPinBiometricsPage({
-    required this.transactionId,
-    super.key,
-  });
+  const MfaPinBiometricsPage({required this.transactionId, super.key});
 
   final String transactionId;
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: AppBar(
-          title: Text(context.l10n.featureMfa.pinBiometrics),
-          forceMaterialTransparency: true,
-        ),
-        extendBodyBehindAppBar: true,
-        body: SizedBox(
-          height: MediaQuery.sizeOf(context).height,
-          child: Column(
-            children: [
-              Expanded(
-                child: PinCodeKeyboard(
-                  onError: (error, _) {
-                    if (error is Exception && !error.isAuthMethodException) {
-                      context
-                          .read<RouterBlocType>()
-                          .events
-                          .pop(Result<MfaResponse>.error(error));
-                    }
-                  },
+    appBar: AppBar(
+      title: Text(context.l10n.pinBiometrics),
+      forceMaterialTransparency: true,
+    ),
+    extendBodyBehindAppBar: true,
+    body: SizedBox(
+      height: MediaQuery.sizeOf(context).height,
+      child: Column(
+        children: [
+          Expanded(
+            child: PinCodeKeyboard(
+              onError: (error, _) {
+                if (error is Exception && !error.isAuthMethodException) {
+                  context.read<RouterBlocType>().events.pop(
+                    Result<MfaResponse>.error(error),
+                  );
+                }
+              },
 
-                  onAuthenticated: (response) {
-                    if (response is MfaResponse) {
-                      context
-                          .read<RouterBlocType>()
-                          .events
-                          .pop(Result<MfaResponse>.success(response));
-                    }
-                  }, // Handle error states
-                  pinCodeService: context.read<MfaPinCodeService>(),
-                  translateError: (error) =>
-                      error.asErrorModel().translate(context),
-                ),
-              ),
-            ],
+              onAuthenticated: (response) {
+                if (response is MfaResponse) {
+                  context.read<RouterBlocType>().events.pop(
+                    Result<MfaResponse>.success(response),
+                  );
+                }
+              }, // Handle error states
+              pinCodeService: context.read<MfaPinCodeService>(),
+              translateError: (error) =>
+                  error.asErrorModel().translate(context),
+            ),
           ),
-        ),
-      );
+        ],
+      ),
+    ),
+  );
 }

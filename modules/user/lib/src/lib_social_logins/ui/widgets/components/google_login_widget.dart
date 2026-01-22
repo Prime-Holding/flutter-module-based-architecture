@@ -41,7 +41,7 @@ class GoogleLoginWidget extends StatelessWidget {
           state: (bloc) => bloc.states.isLoading,
           builder: (context, loadingState, bloc) => SocialLoginButton(
             isLoading: (loadingState.data ?? false) ? false : true,
-            text: context.l10n.featureLogin.googleLogin,
+            text: context.l10n.googleLogin,
             borderSide: BorderSide(
               color: context.designSystem.colors.white,
               width: 0.3,
@@ -50,8 +50,9 @@ class GoogleLoginWidget extends StatelessWidget {
             backgroundColor: context.designSystem.colors.googleBackground,
             progressIndicatorColor:
                 context.designSystem.colors.googleButtonText,
-            onPressed:
-                (loadingState.data ?? false) ? null : () => bloc.events.login(),
+            onPressed: (loadingState.data ?? false)
+                ? null
+                : () => bloc.events.login(),
             child: SvgPicture.asset(
               context.designSystem.images.googleLogo,
               height: context.designSystem.spacing.xl,
@@ -66,51 +67,35 @@ class GoogleLoginWidget extends StatelessWidget {
     }
 
     return MultiProvider(
-      providers: [
-        ..._dataSources,
-        ..._repositories,
-        ..._services,
-        ..._blocs,
-      ],
+      providers: [..._dataSources, ..._repositories, ..._services, ..._blocs],
       child: current,
     );
   }
 
   List<Provider> get _dataSources => [
-        Provider<GoogleAuthDataSource>(
-          create: (context) => GoogleAuthDataSource(
-            context.read<ApiHttpClient>(),
-          ),
-        ),
-        Provider<GoogleCredentialDataSource>(
-          create: (context) => GoogleCredentialDataSource(),
-        ),
-      ];
+    Provider<GoogleAuthDataSource>(
+      create: (context) => GoogleAuthDataSource(context.read<ApiHttpClient>()),
+    ),
+    Provider<GoogleCredentialDataSource>(
+      create: (context) => GoogleCredentialDataSource(),
+    ),
+  ];
 
   List<Provider> get _repositories => [
-        Provider<GoogleAuthRepository>(
-          create: (context) => GoogleAuthRepository(
-            context.read(),
-            context.read(),
-            context.read(),
-          ),
-        ),
-      ];
+    Provider<GoogleAuthRepository>(
+      create: (context) =>
+          GoogleAuthRepository(context.read(), context.read(), context.read()),
+    ),
+  ];
 
   List<Provider> get _services => [
-        Provider<SocialLoginService>(
-          create: (context) => GoogleLoginService(
-            context.read(),
-            context.read(),
-          ),
-        ),
-      ];
+    Provider<SocialLoginService>(
+      create: (context) => GoogleLoginService(context.read(), context.read()),
+    ),
+  ];
   List<RxBlocProvider> get _blocs => [
-        RxBlocProvider<SocialLoginBlocType>(
-          create: (context) => SocialLoginBloc(
-            context.read(),
-            context.read(),
-          ),
-        ),
-      ];
+    RxBlocProvider<SocialLoginBlocType>(
+      create: (context) => SocialLoginBloc(context.read(), context.read()),
+    ),
+  ];
 }

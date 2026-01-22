@@ -6,7 +6,7 @@ class Stubs {
   static const password = 'password';
 
   static final error = FieldErrorModel(
-    errorKey: I18nErrorKeys.invalidEmail,
+    errorValue: S.current.invalidEmail,
     fieldValue: email,
   );
 }

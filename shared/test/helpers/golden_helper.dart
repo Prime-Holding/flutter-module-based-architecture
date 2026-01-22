@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:golden_toolkit/golden_toolkit.dart';
-import 'package:shared/assets.dart';
+import 'package:shared/src/l10n/generated/l10n.dart';
 import 'package:shared/src/l10n/melostest_app_i18n.dart';
 
 import 'models/labeled_device_builder.dart';
@@ -51,7 +51,7 @@ LabeledDeviceBuilder generateDeviceBuilder({
 void runGoldenTests(
   List<LabeledDeviceBuilder> deviceBuilders, {
   Future<void> Function(WidgetTester, DeviceBuilder, Themes? theme)?
-      pumpFunction,
+  pumpFunction,
   CustomPump? matcherCustomPump,
 }) {
   for (final db in deviceBuilders) {
@@ -73,7 +73,8 @@ void runGoldenTests(
           tester,
           '$directory/$db',
           //defaults to pumpAndSettle, causing problems when testing animations
-          customPump: matcherCustomPump ??
+          customPump:
+              matcherCustomPump ??
               (db.label.contains('loading')
                   ? (tester) => tester.pump(const Duration(microseconds: 300))
                   : null),
@@ -89,19 +90,18 @@ Future<void> pumpDeviceBuilderWithLocalizationsAndTheme(
   WidgetTester tester,
   DeviceBuilder builder, {
   Themes? theme,
-}) =>
-    pumpDeviceBuilderWithMaterialApp(
-      tester,
-      builder,
-      localizations: const [
-        AppI18n.delegate,
-        // GlobalMaterialLocalizations.delegate,
-      ],
-      localeOverrides: I18n.supportedLocales,
-      theme: theme == Themes.light
-          ? DesignSystemTheme.buildTheme(DesignSystem.light())
-          : DesignSystemTheme.buildTheme(DesignSystem.dark()),
-    );
+}) => pumpDeviceBuilderWithMaterialApp(
+  tester,
+  builder,
+  localizations: const [
+    AppI18n.delegate,
+    // GlobalMaterialLocalizations.delegate,
+  ],
+  localeOverrides: S.delegate.supportedLocales,
+  theme: theme == Themes.light
+      ? DesignSystemTheme.buildTheme(DesignSystem.light())
+      : DesignSystemTheme.buildTheme(DesignSystem.dark()),
+);
 
 /// Wraps a [DeviceBuilder] in a [materialAppWrapper] using any of the
 /// parameters we specify and pumps it
@@ -171,7 +171,7 @@ void runGoldenBuilderTests(
         builder.call(themeData.scaffoldBackgroundColor).build(),
         wrapper: materialAppWrapper(
           localizations: localizations,
-          localeOverrides: I18n.supportedLocales,
+          localeOverrides: S.delegate.supportedLocales,
           theme: themeData,
         ),
         surfaceSize: surfaceSize,
@@ -181,8 +181,11 @@ void runGoldenBuilderTests(
         await act.call(tester);
       }
 
-      await screenMatchesGolden(tester, '$directory/$testName',
-          customPump: matcherCustomPump);
+      await screenMatchesGolden(
+        tester,
+        '$directory/$testName',
+        customPump: matcherCustomPump,
+      );
     });
   }
 }
