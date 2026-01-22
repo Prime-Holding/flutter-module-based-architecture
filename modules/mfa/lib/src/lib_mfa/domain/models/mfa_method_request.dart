@@ -1,4 +1,3 @@
-import 'package:copy_with_extension/copy_with_extension.dart';
 import 'package:equatable/equatable.dart';
 
 import '../../methods/otp/domain/models/mfa_otp_payload.dart';
@@ -6,12 +5,8 @@ import '../../methods/pin_biometric/domain/models/mfa_pin_code_payload.dart';
 import 'mfa_method.dart';
 import 'payload/mfa_payload_request.dart';
 
-@CopyWith()
 class MfaMethodRequest with EquatableMixin {
-  MfaMethodRequest({
-    required this.securityToken,
-    required this.payload,
-  });
+  MfaMethodRequest({required this.securityToken, required this.payload});
 
   /// The security token used to authenticate the user and authorize the request.
   final String securityToken;
@@ -20,9 +15,9 @@ class MfaMethodRequest with EquatableMixin {
   final MfaPayloadRequest payload;
 
   Map<String, dynamic> toJson() => <String, dynamic>{
-        'securityToken': securityToken,
-        'payload': payload.toJson(),
-      };
+    'securityToken': securityToken,
+    'payload': payload.toJson(),
+  };
 
   factory MfaMethodRequest.fromJson(Map<String, dynamic> json) =>
       MfaMethodRequest(
@@ -37,9 +32,7 @@ class MfaMethodRequest with EquatableMixin {
   bool? get stringify => true;
 }
 
-MfaPayloadRequest _payloadFromJson(
-  Map<String, dynamic>? json,
-) {
+MfaPayloadRequest _payloadFromJson(Map<String, dynamic>? json) {
   if (json == null || !json.containsKey('type')) {
     throw ArgumentError('Complete method is not supported');
   }

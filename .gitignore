@@ -32,6 +32,7 @@ lib/generated_plugin_registrant.dart
 lib/assets.dart
 *.g.dart
 *.mocks.dart
+**/l10n/generated/
 
 # Devops files and directories
 devops/artifacts/**
